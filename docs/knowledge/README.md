@@ -1,8 +1,8 @@
 # QuantumAgent knowledge base
 
-All documentation exposed to QuantumAgent lives here. It is chunked, embedded, and indexed into
-Qdrant by [`@quantumaudio/qa-knowledge`](../../packages/qa-knowledge) and retrieved at runtime
-through the `qa-knowledge` MCP server (`search_knowledge` / `get_knowledge_chunk`).
+All documentation exposed to agents lives here. It is chunked, embedded, and indexed into
+Qdrant by [`@quantumaudio/qa-knowledge`](../../README.md) and retrieved at runtime through
+[qa-knowledge-mcp](https://github.com/QaAudio/qa-knowledge-mcp) (`search_knowledge` / `get_knowledge_chunk`).
 
 This folder is also QuantumAgent's file-tool workspace root (`workspaceDir`), so a search hit's
 `source_id` (for example `ableton-sdk/api/classes/Clip.md`) is the exact path the agent can open.
@@ -55,14 +55,15 @@ indexer's chunk type (skills are typed structurally: `SKILL.md` → `skill`, oth
 
 ## Indexing
 
-Run from the repo root (requires the Qdrant dev stack and an embedding provider — see
-[`packages/qa-knowledge/README.md`](../../packages/qa-knowledge/README.md)):
+Run from the **qa-knowledge repo root** (requires Qdrant and an embedding provider — see
+[README.md](../../README.md)):
 
 | Command | When |
 |---------|------|
-| `npm run knowledge:index` | After editing/adding/removing corpus files — **incremental**, only changed files |
-| `npm run knowledge:index:full` | After changing the embedding model/dimensions, or to rebuild from scratch |
-| `npm run knowledge:convert-sdk` | After bumping the vendored SDK — regenerates `ableton-sdk/{api,reference,examples}` + `sdk-types.md` |
+| `npx qa-knowledge-index` | After editing/adding/removing corpus files — **incremental** |
+| `npx qa-knowledge-index --full` | After changing embedding model/dimensions, or full rebuild |
+
+SDK markdown regeneration (`npm run knowledge:convert-sdk`) lives in the private QuantumAudio monorepo when bumping the vendored SDK tgz.
 
 Incremental indexing is driven by **`.qa-index.json`** (committed to git). It records, per file, the
 content hash, the merged provenance hash, and the Qdrant chunk ids — so an index run re-embeds only
