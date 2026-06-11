@@ -1,0 +1,11 @@
+{
+  "source": "QuantumAudio agent skills",
+  "origin": "quantumaudio",
+  "source_url": "",
+  "license": "Internal — distilled technique notes; see docs/knowledge/skills/PROVENANCE if present",
+  "generated_by": "",
+  "generated_at": "2026-06-10",
+  "last_edited": "2026-06-10",
+  "source_type": "skill",
+  "notes": "User-facing agent skills (music production). SKILL.md files are skills; nested reference/, devices/, strategies/, playbooks/ markdown are skill_reference (resolved per-path by the indexer)."
+}

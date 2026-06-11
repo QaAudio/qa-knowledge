@@ -1,0 +1,1739 @@
+{
+  "version": 1,
+  "collection": "qa-core",
+  "embedding": {
+    "provider": "openrouter",
+    "model": "openai/text-embedding-3-small",
+    "dimensions": 1536
+  },
+  "sources_manifest_hash": "4707dda757a74cc0f27e348620232ec48123e6b443ea202a069630865ccd493a",
+  "knowledge_root": "knowledge",
+  "last_index_at": "2026-06-10T22:21:54.263Z",
+  "last_full_index_at": "2026-06-10T22:21:54.263Z",
+  "files": {
+    "ableton-sdk/api/classes/Application.md": {
+      "content_hash": "91f6501f7327db60c370998a2300805be0a35720e94fef94438df2b6b688b58d",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "c9efdb6a554d0acc8a617df1856e91eb",
+        "f1f21ad33fd5e37f8bde852c42f753f5",
+        "8796b209e3c1689fc9b927a012a8311e",
+        "f4f56566d5c37f063572b6e3a9ca9e14",
+        "e726ea44974295f409a55ce85e6972c4"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.265Z"
+    },
+    "ableton-sdk/api/classes/AudioClip.md": {
+      "content_hash": "d863212d92a884ed534ff1fe23284a0a2f0915be50a687b61f06a792c8b3b224",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "36150691708bcb338d10cb2234182efc",
+        "77cc4159bfb2978823b42e75bc9a31ed",
+        "cfd9b2ac71cc493bc708aa95c5ab09b1",
+        "f7459fb4d6b2e612989d3cfe39d61df5",
+        "f4ddd4cda04d292fb8ef92551f0b2b83",
+        "ddd780de7fbb9a315850ce1402873933",
+        "9172cfa52c0f4198df80de22df488aef",
+        "97abe35ba523f076314c28e53e883ac5",
+        "d1248b7cc78d16fdf850da1cc1afbcc9",
+        "060dd5dadaca07eb6619c0929f65d814",
+        "acd36b6b2649cbb79caca04634c0036c",
+        "781d91c5b9580139157da049265c6219",
+        "6a2f942147df484550339ffd37bea15e",
+        "6f35b32a1364e43fcaecaab78b014654",
+        "f8e7b638e9cf06d0f6210302a3e55634",
+        "1c430f7b7ba589ff4bc7eb6d738238bf",
+        "2663c41bacbad1fe05824acd448fb20c",
+        "da1b1c8febf9e91015e48e6482ac6717",
+        "7f63ec80b8be9264cfacafe778402f92"
+      ],
+      "chunk_count": 19,
+      "indexed_at": "2026-06-10T22:21:54.265Z"
+    },
+    "ableton-sdk/api/classes/AudioTrack.md": {
+      "content_hash": "0afe3d4325fb1df6c3c73a632ba0791f6b668a8feea5e1cf8c89340654a086c2",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "83c4c96c0e009e08b0b31389abc52be8",
+        "6f73cd54c99dfea7d80abc4a8ebdd509",
+        "28c6f7880b8a61d710b1dabb98d12516",
+        "c94be5d7986606c1cd83fefa560a09a1",
+        "a632e4dda4f16f7e96e6010307b041bf",
+        "b138f9481dca4c1e4a55521fbceb12b9",
+        "1d2e8e876ee1f81cb37418aa168c2797",
+        "84b1a02d2a6a9e1603214749d0b4374f",
+        "04b400032d77781194692354d95571fd",
+        "5d457aa8a50dd2568e94c2e55f6e300e",
+        "2237f0bdb1d21e1e716918aa9ff68f35",
+        "4396fa89579310420a9040f0b6b7b956",
+        "330b22f463bb79d595ad591698c9e12c",
+        "10aa4becc3e4b35c2aae32aa3a380669",
+        "9ac3acf4a99854f2b0476e263f92c66b",
+        "efd10845b57d7f751e4b7ec2e52e845c",
+        "d6c94ee658b4ea561b1a31af4bd44dec",
+        "d0781734ff9326c744a808f63a1be510",
+        "73405ec6b30af0bd231438d37a87192c",
+        "d301135ce21c98a4ecdbb7f0337e2311",
+        "06a1a3e83900c8c99a85eca599e1dcdb",
+        "bc58c160862e33c683ac76e9c22975f4",
+        "ffdda4f56b64a1672b6b7794fd0b5607"
+      ],
+      "chunk_count": 23,
+      "indexed_at": "2026-06-10T22:21:54.265Z"
+    },
+    "ableton-sdk/api/classes/Chain.md": {
+      "content_hash": "7f7289e8e993562b30b98d8d1207040ef160b25de30d9f70b097df1f329c2640",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "894e1f4bb8a05b77822f5eb27a018fb5",
+        "1692aa9a2123361162af748f7d9e30c5",
+        "1daa71eb84071a7c44c0c9fea27da04e",
+        "52f8471eb2660eebd114876098bcc9df",
+        "d028c8cbddda6aa3491e7190d3215a15",
+        "cc7cb7b9fd8d0ad65401ce77bfc671f6",
+        "329b4e04cbab635526744d9a31a6a05b",
+        "af2727c70a55678e02abfbcc0fa45ab6",
+        "8c3c828cdf31ca5d4ce06c13da366216"
+      ],
+      "chunk_count": 9,
+      "indexed_at": "2026-06-10T22:21:54.265Z"
+    },
+    "ableton-sdk/api/classes/ChainMixer.md": {
+      "content_hash": "02d57aa7b96ac7a084628c4730a21ea79db2b4b6346724d490b2ab95adc23c07",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "ae33283b745129fbfeb130378768d30e",
+        "8a93cec5c82941bb9e76f3ffd1a1fa40",
+        "0776c525da211e65586efc4e7208a29d",
+        "a97b9224435035e0ca5ae1acd5cc2e85",
+        "9a61cad6e2a60f190e02285408139f79",
+        "e10279c25889862bcc8b70ffcd4484e6",
+        "485ff3930c8a0b00ad8ce43f682f72b9"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/Clip.md": {
+      "content_hash": "c9f3d549cd370b19b6521d88707a2e2b295c449992052b81ffb71b09f72fb014",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "afb7b73d3ce55fb4638d35778d67312a",
+        "b32bda1ae82de545f191eb6a3ce97f11",
+        "f8b75d77dc6d83999e53f7bc603e7527",
+        "0d932843022277b7c77f8f9f38fff0b0",
+        "6b94c3e22bf193610bb21787ffcd849c",
+        "36c1c7e9b28e50470d21387d4ae717ed",
+        "cbcc38f8bcd94669ea3ec91c011057b0",
+        "83183ab7056a73c6e726d371b31b94f8",
+        "3fb5b7b7e2f4ff03b85676d45542ae43",
+        "66334c9b6162fa6be6fc08286adb3e16",
+        "e05e876600e870a183fdf56fa9b73d9b",
+        "25713253feccf24fee0d232a33ee3f3c",
+        "04ffaa41d6b62fa023b362d0ba80b58c",
+        "76668846011d3fd9fcfd613d4968311f",
+        "71dadbaf50c35616494083047ae6c623"
+      ],
+      "chunk_count": 15,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/ClipSlot.md": {
+      "content_hash": "d0a628c264eaac71681738ee98185061c43365cdd9b42524912ac69bb81b0619",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "e3b6f1a2d294315f6242d6dbc43758e3",
+        "7ed17f3615e50d378d047c97baf6e671",
+        "4f6a78c6a811b60f2ad2724c3e45acc2",
+        "db3dcec65fe1a07aed738fa07805c556",
+        "9797148a8acd2a448da7ba412094ada8",
+        "d7c99d4464e3d68da0695cb76c40c3ee",
+        "0c4942daee2471300cbd353b848b0262",
+        "304539eb4675ee54117080802d52ab2d"
+      ],
+      "chunk_count": 8,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/Commands.md": {
+      "content_hash": "5495875f9e753d6f7c506a500370332344db42a0696bdc488fdb2c6bf7438cbd",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "ff7369f5b392dabf8dc4405cb1ab2b7c",
+        "40eda5fa19e041c278a4a69e22ab2e19",
+        "213ef4edc83abffdf02b22f93147f101"
+      ],
+      "chunk_count": 3,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/CuePoint.md": {
+      "content_hash": "11484c32b49af555b62ce8f6631ca25383e296c6bbf14bb6ec96dbadd27508f2",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "4788ad2c4224aebc7966fdc376efb870",
+        "9f169ec98f257b63c77a04c33c004c4d",
+        "0144dc067b0e8dbc318277e91d1f580a",
+        "a31a2d16f092c3abc9c07e269b55ea31",
+        "7afe69fa31582154a7d6190d6a80a12b",
+        "d90e2dab34adf497147df6b2d86fdeae"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/DataModelObject.md": {
+      "content_hash": "d601c6c34476c25ae9daf43d952ef667d793c1caba2a34825a120ef3a748edba",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "0f01a11cb2f25bf53e98021ca2beca5d",
+        "c368b382d0acee6838c40da207498107",
+        "6fa86940ca1ee8c4477ca99c8a5f145f"
+      ],
+      "chunk_count": 3,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/Device.md": {
+      "content_hash": "0bfbd335b13102e5bca575115c98df23795db8140920370cf2700b35f113376d",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "cbb872c958517bd2b5c8899659b2d567",
+        "d4295002882cd62dd006028dcc953b65",
+        "e870ca452dc6c579df4b541f8cee4320",
+        "d6837736f1cb074b47bc153f0a04342f",
+        "22aecbff11ca86b4b4387368066c9090",
+        "4c44b757eeed695efb261608d59a520e"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/DeviceParameter.md": {
+      "content_hash": "c631e16ff04d78adc9fc2159952a0d1106525efcab9bf6ba89976776bd4bd3ab",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "45127d8786c5f150e3bf4f0a049c6682",
+        "1ff4f2845ab3c1c2da2635848341768d",
+        "c3d99997bccb46a55502d928d345701c",
+        "93e6776747812ff513795355ee64c900",
+        "3958974b155d53a7f10afb204fb4933e",
+        "340df6ee5ae08322df3cf89ba2d89b42",
+        "468f8f61e9ddd95f9c06cf65c56759a3",
+        "cb6444e814394f18c4eebf49356ea1de",
+        "b6a7e6edfb6501f4de50418a90f7b8d2",
+        "cf3b7ee60e8e225f9264b4d7f00b56c7",
+        "997aaed3a39238ea095dfd7fd59f3ea2",
+        "b057498ff668a8cb4918c61b6f93bed6"
+      ],
+      "chunk_count": 12,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/DrumChain.md": {
+      "content_hash": "5c7c99ba8c8eaa06f738c2e4a75ab941c97497f267b043bc8cd251e0208dcfd3",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "6e74e76e8ac92b5a790b741c3daeefa7",
+        "2f7f2e8c3204a904c42ca6814ffc6aaa",
+        "b29d9ee6686ee41a83469188ef9286df",
+        "79a8b9b4ec4daf83b62904edbf79cbb5",
+        "a86b037fcae97132ef4c2aa8c0d0ce2a",
+        "6fa804871a6ec85f64184047fc93719d",
+        "57f8b6328cb94ad110b1f5a34112586a",
+        "e6fb55c07431720e7df61488d5ef7f8b",
+        "ff531b7c11d36b0684d2070b74514e72",
+        "b03903afe45c1986a1f728f00000d07b"
+      ],
+      "chunk_count": 10,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/DrumRack.md": {
+      "content_hash": "cb6fc8f8fb6ec762cb30ca513cd5534f08e4bcb93f548ffaa497f1fd3d109b76",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "4924d8bc2da2c5618bcc3398624115c6",
+        "2480f7dc6425433f13c41a54001f1cc9",
+        "ebb70de119cb0b4eccbf89ae0c5cad6a",
+        "48e9cefb7d85d2c9b41d94a498066df5",
+        "0f16288ad1ca942e79d21a91acf7d905",
+        "d47bf711efc0c232379d04da16e07889",
+        "2f0ceca85409609723b2075e84431c4a",
+        "1ef0797527b67157550c23d0705fa90d"
+      ],
+      "chunk_count": 8,
+      "indexed_at": "2026-06-10T22:21:54.266Z"
+    },
+    "ableton-sdk/api/classes/Environment.md": {
+      "content_hash": "6209abb32858055ff721a3ff7a18063104ba94bcf26e5552393a5c627c1dd70c",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "dca54ee1168f5d465397a26ba59a2da8",
+        "0c8a4c43485cdd55e5994946d32947f8",
+        "2f269e2a8835545c76cf3fbf684fe50b",
+        "a95e9e6a31d227a0b57eea595d65e8ae"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.267Z"
+    },
+    "ableton-sdk/api/classes/MidiClip.md": {
+      "content_hash": "ea2a7804dc09d07ed2410b3afc572cbad62d725daaa09511a7754162d2cac1b8",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "f0ef58433a03078f0d1b0c04fdc2bbfa",
+        "bd10b9f51a6aa83f1cd8e186e5034a72",
+        "7ba1cf08b22e431e8488d70f1b1496b1",
+        "25d8f5a794a2faf5b55694bc28d20e67",
+        "7c9fd8ba78905fcf5305f94a292de8bd",
+        "cfe08dc60a3a518d85402200218e950b",
+        "d011a607ec85e04760721a01f52616a8",
+        "aa34fe4b2bde98603ba5fc05022af7da",
+        "730357304074a3dc9539d3f168f3edb9",
+        "efe32f4a5b34077515ea854afb03ef37",
+        "917d30cbb2007581759bbc7c50b5e4b5",
+        "ee235c29a7b5d5c7ae5c7fce24510f74",
+        "5fc8e1bfda26d3ff9ffe1f85ef254878",
+        "7065738cd6847be5c4c99d2d39d93fcc",
+        "0ca27acc869091dd2b938b925ac5e319",
+        "9880360ddffb6ed1cf64667f0ff09e53"
+      ],
+      "chunk_count": 16,
+      "indexed_at": "2026-06-10T22:21:54.267Z"
+    },
+    "ableton-sdk/api/classes/MidiTrack.md": {
+      "content_hash": "3bdc9ba6edb2e80698ec958afdbb8ab36bc0c9eba4dc0cd501a71a06fa7db80d",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "50ae7e4e05c672b19803424284172650",
+        "ae34cbaf151123fcafa885e36dc4fc3c",
+        "3eb2aaaf99ea6909fc832aa4783c4f67",
+        "f5a941907304f1c81093b0f3a1210cae",
+        "9b8ae16329d593b73863ad49f9f60df0",
+        "f6be1e8d858b63d953645bc24ab0ed51",
+        "b5a8e86cc9e2dad49948b4e02379ffce",
+        "1754c677b91d23218d3d2355beabda62",
+        "5beffba23abd4f2ef5e3923c6799b818",
+        "b8c2e8282672fc7ba3d6f82196005094",
+        "9dc614f51251003aee482a8e9e41e4f0",
+        "0f7e368ba3ce1f287f92dc72af9c5ed5",
+        "97d7425bd198ba7fd9105dc93f2a489d",
+        "589d981e3aa28fb689c93b5a9fe5edc0",
+        "58159d6c3697d3fe05877ef5dab9396e",
+        "beeeca366205940b3e1cdff9b23c407d",
+        "7411b8ad66b24f543c27f3979084b66e",
+        "428f979543447f2e5bf650af4897f39a",
+        "eeda19d8e399ceb1349945c91604491c",
+        "0abce84fee8c934b179b878c7e2b6267",
+        "7bc0ec703612dbe46dbae174e4f0fe59",
+        "d603d0a4888b8931b0c4f2f44bf89e34"
+      ],
+      "chunk_count": 22,
+      "indexed_at": "2026-06-10T22:21:54.267Z"
+    },
+    "ableton-sdk/api/classes/RackDevice.md": {
+      "content_hash": "713fa396aee8e3dee5fbadce37cd174b136878b8d75dcece5679ed73dcdd8137",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "11a3a3a9c79f8875cc6d7ee1a5df0017",
+        "8af0a7793549ba724aec776e4523f1ee",
+        "0af36e06f5a12e86f8bba7979cf16d85",
+        "1dfff9b24e1f8c7e56acbd83ecbe1341",
+        "0ba11f50aee1197bea63c58366fd8655",
+        "9989ed0b52175448db782f4f83368782",
+        "583f077192a565abe54f0cc1a23923ef",
+        "d7c77e3728e205c17b1009d8c8f0edfa"
+      ],
+      "chunk_count": 8,
+      "indexed_at": "2026-06-10T22:21:54.267Z"
+    },
+    "ableton-sdk/api/classes/Resources.md": {
+      "content_hash": "0a442561597dc80758617b53d776e10b3945ec12e3ee3e243b92642664233b7e",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "291055dda01fb1f620c26d75e6572dd8",
+        "ab028f8bb2888cf14df50b80c8fc12a7",
+        "db1d884207dda6721d32b182bee00f27"
+      ],
+      "chunk_count": 3,
+      "indexed_at": "2026-06-10T22:21:54.267Z"
+    },
+    "ableton-sdk/api/classes/Sample.md": {
+      "content_hash": "9865c35643081e95a3c17ae128806468caba926b532c563866f42b939e715809",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "feb43fee89257681c7ef4d8a3ff83d27",
+        "effa1d114927cfbbc1b1828aa4e7a820",
+        "39f7a01a985b9b5e0cf3ff126e177944",
+        "3f235ba699921451424742083a171fef",
+        "65075d2261d0d2954c5525f47a3da5a8"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.267Z"
+    },
+    "ableton-sdk/api/classes/Scene.md": {
+      "content_hash": "a219ba1faa6511c97526a82cac837e84c21fae74cabb619ee3722c36889106b5",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "315a7b8c791c967029548d538746067f",
+        "2345a3715deb163a0bb8f4910bb51e22",
+        "34a51126df09809c5f53faf346b741ec",
+        "5781894b98b8881437d24304d90ffc1f",
+        "62288da7e76c4c2af92de05fe7883358",
+        "73f9f7d538e2ea4572938af4cab25a55",
+        "de7d4e26103ce3eebd30c2e8ca3299c8",
+        "a8b81c52b107269419d4281585e4571f"
+      ],
+      "chunk_count": 8,
+      "indexed_at": "2026-06-10T22:21:54.268Z"
+    },
+    "ableton-sdk/api/classes/Simpler.md": {
+      "content_hash": "fd2a8c1ccdd00a50617298584c7ff477d76f0785b21098d060605178be532604",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "77e82063c0d0d4a03b52f9a0704fe321",
+        "bcc8b86d0270d0a64a09393d9ce12477",
+        "872c3bdcba9e9d8bc549061117d85bb9",
+        "689edfdebb0ff88dd55dcc37677bb9ae",
+        "77f3798af6ad7134cd9a9a87885af799",
+        "c18accb0fa3c81efb7f9d0115790f7b1",
+        "201b6ad1bd59a58b5b2fca347b1c08cc",
+        "99ac75c1cd31594d7f1be30bef8ac699"
+      ],
+      "chunk_count": 8,
+      "indexed_at": "2026-06-10T22:21:54.268Z"
+    },
+    "ableton-sdk/api/classes/Song.md": {
+      "content_hash": "9f66fd1cb64c87a66958e7479043073b97828b4251fa66bde56b1482c85a59c9",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "212c9a12e545f5ce4d7c551a0bdc2494",
+        "4358d8d9bbc3c84a0b91cb648493770c",
+        "bb31263f38e0dfc2f900f21367393add",
+        "c0562e8d1fa082974d09d6c9f948bacb",
+        "ea374405d984a8e66d7de99fb897a5fe",
+        "0e485d96d4691513012e134c1f5bba20",
+        "09b3cfffdf40b75e02391167f2ad5111",
+        "b1f6ac8af091707918b5b45c341a5a88",
+        "677ff9199c5c6958bba2db47381ee8f3",
+        "672a26d2844d0f4c6993ea8dde917621",
+        "3733553ffe6cea5d19d2c7620dd95745",
+        "aae9dd6a040fa9f4f5817bbcffdce044",
+        "649a4178208d5fb6c16094895370f822",
+        "79c99bdf6ce7202e27eac6d54837123c",
+        "271ae2707efeed19c32bb0fd6750da91",
+        "fcefd231ebaf516179ba59217bdfacb7",
+        "e92f48ddb41b69550f51578366a6ad9a",
+        "f56fe23cc23b9f3ce83a7c3e33dfdb32",
+        "9fdaeba078019d64ea31febef0992ea0",
+        "ce0769168e23bcf1a8a8820d47b24cf4",
+        "ef982c36552ee85598773c68a0963446",
+        "011ff77047453b43fb0109fbbb84d20b",
+        "5832d4cc1301831280d8476d422f8ba0",
+        "d237efe8b8cc981e840a7aed61c6e36c",
+        "def0d2e3224fc78b0cbc71e74ea04394"
+      ],
+      "chunk_count": 25,
+      "indexed_at": "2026-06-10T22:21:54.268Z"
+    },
+    "ableton-sdk/api/classes/TakeLane.md": {
+      "content_hash": "f06e209505420fa74309807540658cb9bfc17995a8dd6b7019702927a0eaf53b",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "831533bd49e33a5601f5552d8c90f2e1",
+        "089ae9e028f853ddcd05d6cdc988d09f",
+        "f4ba6e321970f1a3e0aa8b31243d74a3",
+        "9cd49350ebc44cfbf7c307e86daffbb9",
+        "768377c247be1b10e74dc49ca5110343",
+        "854113284ba63b21b843e47c590acf90",
+        "9d6af54084d52ab4faf829b2b530c4e1",
+        "00a7f1215af6c6c87f2a153d2c9d46a9"
+      ],
+      "chunk_count": 8,
+      "indexed_at": "2026-06-10T22:21:54.268Z"
+    },
+    "ableton-sdk/api/classes/Track.md": {
+      "content_hash": "7eed2e3daa04c87a22afa5ccc49d4a932bdd9501bd2d603edff206a347fe66a1",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "44ac60bc7c3d24e765ec477f39009851",
+        "943fea335a194108a78c5eba1532315b",
+        "2246dd6c65f04414fd39d7c2ddbc2458",
+        "a19dcc19f6a10a48459b7d82f0882f9a",
+        "8dcd63ad9a2eba55fd78d48e8cae0c00",
+        "b3befb1630a8de2f1d9384f131638bf5",
+        "79b20f8dbec01ad765eb8f2f99861925",
+        "e0dd5358ca0f823f0494106b3cf9a302",
+        "a4b0c2be45309f7379097bc770ef4aec",
+        "bf79a74d3c56a845920c1570a852e816",
+        "c45f167416eece8f59648f66541251eb",
+        "751028f702dc48007aac38391978d34c",
+        "677f493eb803dc0e0df5660ac73831db",
+        "7a12dfcd5b884d9a3cdd512ccafc3eee",
+        "9a4acd6582e11c8177cf42c2f711abff",
+        "c2493e18feef667cf22310a697ea7031",
+        "53478b3fda41dccada167a03d57d2540",
+        "aba62575c69dee9bcba8e4b2ee721616",
+        "dc3b768a686f647850d98523847d46b2",
+        "2aa135189c0916768a4372156da8b7c7",
+        "ab33bd7b60e9393799b5665c29f0b065"
+      ],
+      "chunk_count": 21,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/classes/TrackMixer.md": {
+      "content_hash": "0a7acc7cd6aae4bf0bff6a959810cec3f052af8e3fece23080773c21ba29eeb9",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "d7cc686d1303afaf00b0887a3ebf3c0d",
+        "99f5d4a0816ad5972db682eca0dab935",
+        "251a84006824405e55ce1a2deb6b20c4",
+        "fd4a17ce51c8922c03e5ee0cb339f132",
+        "2d77f55cf5532aee68402b97bac1dec6",
+        "db561923824fcc2ff8de963b133b79cf",
+        "901ae9f9925138ac5d505629486ea68d"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/classes/Ui.md": {
+      "content_hash": "8ee272c20fd115dd9a47fd4885341204ae7dce91e3507e8ca2a35f95932de69d",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "87a12357c75f5cccd9ebc99e7b0ee389",
+        "6f117d00ba12dd0f012b2ea6768cbde8",
+        "947c3b23ba149e9f3f5d2e19a1d17b05",
+        "4150ea011752b406ab1f9ef9c788eaa1"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/enums/GridQuantization.md": {
+      "content_hash": "4bdbc7c9ba4d474b35c71547564f2bd6e3eec58c0a96ee0bbfb0338dcac0fc02",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "18f7ba93120e1176bb00744814f5ad31"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/enums/WarpMode.md": {
+      "content_hash": "210ae3f2a69cb73df819633d6bc7ffa332ee1aa0e705bfcdbf85ac673cdb0284",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "a381c7cfc35f93c03cfa87d468a792ea"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/functions/initialize.md": {
+      "content_hash": "8c7db0f6bf0a3e4821db562048b84abf90dee39636f8e61b5619feebd8e4e06d",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "b33b0836a7b11ec14988b673cce6d586"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/hierarchy.md": {
+      "content_hash": "40f0900f0c0a9b2d3f21862f40d799e3e9af5377105547a09d3c8e4a08b21fc5",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "25241c177c3ea2b86308dd65f875ee40"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/index.md": {
+      "content_hash": "eac02f1f8e2d155f0977202198f859e6b445188c74ca5c66a92f1608fb298b3a",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "31c4ff7f7b9840b3784eb92fed022d30"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/interfaces/ActivationContext.md": {
+      "content_hash": "f6e71436c9e1771e48ebf538354683baf899de2460cb8dbdcc898b45faa573eb",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "1d92ce4fcb875c630ac98ec026218afe",
+        "41100a6dd2de6d85e5800fccae57e67a"
+      ],
+      "chunk_count": 2,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/interfaces/ArrangementSelection.md": {
+      "content_hash": "5140de737ee3d2e0d2fb67b6f4efb7e7eebb416c4d022088a73f2594a36b532f",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "bb1a6461f5340a2df5fb7421f1e3982d",
+        "d96cde5bcfe06361ee115b6bc18538de",
+        "caa8cd4d760297e36761ff9ee8786ca2",
+        "b73edb1ddf6a64c80ceadfe21e78b2af"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/interfaces/ClipLoopSettings.md": {
+      "content_hash": "fb528a0add5129c9529d21f08f3d07ed43939494d0a6797f523b5a93a3d0c018",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "d3a8f4b43a6b15ae38edb20d56e1167b",
+        "9235f957e4f5379a5d37eb01ac6f3be8",
+        "65374e8884736aca7754d296fe476700",
+        "08080544bbdc83dbe3807e6f37b0a89c"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/interfaces/ClipSlotSelection.md": {
+      "content_hash": "a0be1b221b155dac7a2fe7d3061f2949e23e1eea1b581b018ffffb5e4165ff16",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "6427f11c07da426da08abda72d98081f",
+        "8b973bd947986070f1a69b6b90b343c3"
+      ],
+      "chunk_count": 2,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/interfaces/DeviceParameterValueItem.md": {
+      "content_hash": "dff439d7c281ac2d834c9599c14d9bacf1fdfdfc030f27e8b14c79a700780000",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "290da426d1ccdf92f7bab58bb28d04f7"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/interfaces/ExtensionContext.md": {
+      "content_hash": "79e29b0b9f5cd689d933f6d010c340d8669e5132deab7a43fe5c8ddeb159ab2f",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "9de9d86683f34a67ec5aa39bef0693a2",
+        "41667567080f5439184b2f4b1af219f1",
+        "75b2bccbec9a738c868c72ee00c43f6b",
+        "ae2d0acc17d4cabbb1c44a176622cea8",
+        "702984868259f10cbf4f1180ec20c83b",
+        "8dbecd4b656ffdfbd7c9941d1ea5b12b",
+        "5427c1a53664883f15a7a75e732399e8",
+        "cfc821277c8fff773ec314d055e44eb8"
+      ],
+      "chunk_count": 8,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/interfaces/Handle.md": {
+      "content_hash": "0f2532e3acbd542d27207e56b5c1f6a51509c600a05cd89307de542efb175a1c",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "64aab1f9413955d274e9afd715dce4b2"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/interfaces/WarpMarker.md": {
+      "content_hash": "62478b739fdfeaae180811ae018c6c803cd484bd0731173093c2e76eeb090a18",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "920d98479aca3be83dde572c66f52281"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/modules.md": {
+      "content_hash": "2f40cda6f4570eeedd3613e93378a40f5f9f0f481bbcf9e516b6588395ebefcf",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "427350c0336b53ec8df0e84b9c283955",
+        "a98ac4c913693f039bc9e60322946e3a",
+        "d87e80affaeefc0d52b05a4c2179e6e2",
+        "c5f892945262025c82c740adc7b94e91",
+        "9551dd8dd2f319e838a8fb12353dbc5e",
+        "c67dbbdea86f934680bc0dfc41a0fec9"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.269Z"
+    },
+    "ableton-sdk/api/types/ContextMenuScope.md": {
+      "content_hash": "9fed0d07e49640260d23499287854b5052e62d16b51216ea0d54f976114cff36",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "8680014be04ede5dd87545db1a8e0da9"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/api/types/NoteDescription.md": {
+      "content_hash": "7052481c1e32cbda9f694041aacd529b4faa3a64fd02e4f80dc7397b174681bd",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "1b48c2e38b67227eb9e9d010f01c3f51",
+        "0949727a332a341341aa3a2fbec8358d",
+        "3db365dd07b96a1332560097d962bd54",
+        "6c243ad2388534bcaefd15065cfd91c9",
+        "67a1262bace382bfb8dbc357da21a034",
+        "106436407596f6a0fe5cc8833e6c8169"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/api/variables/EXTENSIONS_API_VERSIONS.md": {
+      "content_hash": "cecccdbc41c0f1e93f48b449bcd2d9a391f1d3bad9aad053c8de291490203230",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "5f7fddc87c89936fabc72b6801c65c71"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/examples/arrangementselection.md": {
+      "content_hash": "7247dff3882540ef11e874d7ab3d5272a512b4849836a944a90de44b30d305bb",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "efccb5b735c7a1a5bcffb49f088c2994",
+        "be01f74f2299a2a08d0827e75acae84f",
+        "6ab9caf23eca6c6a801e6923b3b25937"
+      ],
+      "chunk_count": 3,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/examples/audio-clips.md": {
+      "content_hash": "17befc51b8ccce08fab7d34497600c555cc2e4e9754e0baab3bfcec39b789d3d",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "354c137e394d5cc40ec9de0a87271fa4",
+        "06442844331730fbc186bf56b634bc8f",
+        "212bfb0cbfe6b04578c1d63713f9a36a"
+      ],
+      "chunk_count": 3,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/examples/context-menu.md": {
+      "content_hash": "e436ad473d466053bacb914e3ebc2918d8ad70f12533eff39b998cf292aa2e9a",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "9970c63b96f6ba87fd95ad3fde2f84b2",
+        "fb4e66d599404ce39e72488284bb7b07"
+      ],
+      "chunk_count": 2,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/examples/modal-dialog.md": {
+      "content_hash": "c00ea71a809f470b984c5466b0fd07c03a048226dda98f72fe64afcf1ae8dd39",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "4d7b8c1bbc00f74b64cf677acea7d0c5",
+        "ec7ed806f68c524e600d4c82f72e6fea",
+        "1583be3a99a2008569adfc372df9bdb0",
+        "c95570a8f2732e2fcf29da90cddbfe58",
+        "ed2ae420235dbac63244b5a36e69ad40",
+        "f25f45dfee9320d976104b5851c1e977",
+        "a321de2563c444c9b7c1d7042b3ec50c"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/examples/progress-dialog.md": {
+      "content_hash": "ea56a1dc47b8a9fe5c2cafa33df22113108b441a369a2585352d74ce7c0cd436",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "50fde28bedc517ee4d0c7cd36e72d2c9",
+        "152e8c1673a886de20b1039345e49417"
+      ],
+      "chunk_count": 2,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/examples/strip-silence.md": {
+      "content_hash": "b7d4cf0e9e8afe0e265483b347d362d6057e49918393559f438ee6f47473c988",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "e88d11ffca0ffd084ff9ca00cdbd89a0",
+        "fce63b61579606fecec8e5b5812c5d35",
+        "73a521462e2ab326c740f79df30cc5b9",
+        "58968d6dd8db23da52b61626fe1838a7",
+        "46831fbbbc0f8d272ba46977d3e215a6"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/examples/warpMode.md": {
+      "content_hash": "3fc9f94b45a422bc33193b640fe106bc664ab55d6b0f65690c0f3174920b282d",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "5202c18eefe45da936a52a9999faf0bd",
+        "dfda59f2d15327410a32a02365ff12c7"
+      ],
+      "chunk_count": 2,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/guides/cheatsheet.md": {
+      "content_hash": "fd7842dd08e622e99858c679a377eea8840cce64445957c28ca1b5743ad7126f",
+      "meta_hash": "dd60205cd7d9d4014193ee411de2f7e0da506b90326dd67191dcedb955062f50",
+      "chunk_ids": [
+        "7f5efa666ce5a1e6816272b88016de5e",
+        "19cdd7c0969b2377f85435a4e7f1bf25",
+        "e21354e55d22be788f21640e2197320f",
+        "d0828dd39a7855de61f9d10505fd3ec8",
+        "bc337c1c5035e213a0704cb81975a4ce",
+        "26ba2865316101f49c09de88b8407e03",
+        "f26c6f993f410cb59342d47893d8df31",
+        "4ff57348b063c26b2a106f6a1cc33057",
+        "6097dffe59da2d946fe2605658d6ba4b",
+        "a6b26b0e7a1b3a161339c81d9869e18b",
+        "46dd233bbd9eb3617c6f7b44fe7a56b5",
+        "e19df8fb3e5ab8ce5a4409704827b398",
+        "75e868066fe44f6a7c87bbc9f968e3b3",
+        "30040671a1b8f7e76872392c95b387eb"
+      ],
+      "chunk_count": 14,
+      "indexed_at": "2026-06-10T22:21:54.270Z"
+    },
+    "ableton-sdk/guides/quickstart.md": {
+      "content_hash": "a28a51c816c8ab132e3573a2a9adad91b4b9c77b9133df5cb82d2654374ed3b2",
+      "meta_hash": "dd60205cd7d9d4014193ee411de2f7e0da506b90326dd67191dcedb955062f50",
+      "chunk_ids": [
+        "d17ea23d71e1dcd4f073a37351010da7",
+        "0ae76a9a4d2e66b8658ecd1009b904a3",
+        "5ea90d180959d45e9827e7cdd189f874",
+        "c8e9c04abad1b9100f497d91ce2b0b55",
+        "18c9a0e602834009163aa1c696beed49",
+        "fe92ce002c11651e972e5de63d6d037d",
+        "57afaed0ec5704ffc2b6b1a232bab14b",
+        "9204eab68701ba3b28832e82abfcecf4",
+        "fc9b1f89ded9d6b8061f0d5740deb397",
+        "8d69e11dcf5887aee2141f17f7e50055",
+        "49b39dfe6ad8e122f84f6bfebbd69f5d",
+        "d05ba7572d172417c8e7e36a2e1ea3c5",
+        "1d56aa99d9cc78ab408455fdfd7e2e68",
+        "8ed44d743b3b952d3c18da0bc51475da",
+        "e05c8254c29af6eb4f53d70c844bec2e",
+        "5d9a12fb322823d5fe9312b6359ed7ad",
+        "2271c49280f684ee6fcb19e1291a8cd6",
+        "f7a870a45046a461f88b847e04da54f2",
+        "234ce17d5a5db54dba3c56a78670202f"
+      ],
+      "chunk_count": 19,
+      "indexed_at": "2026-06-10T22:21:54.271Z"
+    },
+    "ableton-sdk/guides/recipes.md": {
+      "content_hash": "83597ade8b5b5a99838145d7b73342e2c59198caac554cdef7461bf2e060e416",
+      "meta_hash": "dd60205cd7d9d4014193ee411de2f7e0da506b90326dd67191dcedb955062f50",
+      "chunk_ids": [
+        "6814274826e14d4448f414c624e657cc",
+        "b4454ce7637b9199f824decf0851b99e",
+        "cb1745757b47d374d97de9e8bc7e9e33",
+        "5053ee508cf9e5ada8ef39dc3728c86c",
+        "59db35063ad85b7b0c6acd1100f068ce",
+        "59cda9b6762268882e7e71384924e311",
+        "9f3a6540b3812bca767316576c61e20e",
+        "3b586da5dee7705a990a43a97e53bfb5",
+        "3d54559104329a41d4f7df9631ecc31c",
+        "f5ececc3f5fb0b552368cf16db2ee843",
+        "f4d2f0367a6f2a6b5782a64f6cef8115",
+        "e18d71400ef5e85a310d270e20b328a4"
+      ],
+      "chunk_count": 12,
+      "indexed_at": "2026-06-10T22:21:54.272Z"
+    },
+    "ableton-sdk/reference/essentials/concepts/1-activation-and-context.md": {
+      "content_hash": "145fb470d2e8a1e1a69f05d6211b5e29492a59f136c6b3d0113fba2c4f86d281",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "27cebe0d64305893e061ba42579fa207",
+        "0b30b4a3429f5d053d2a0ac118e3fdfd",
+        "6828ac5264aef794be25dd1f5093a11c",
+        "366b36f1e94932cb23f3f6c22afd64ff",
+        "98647d891fc6efc9eaac7a86e955206e",
+        "1eafa4d492b0f694020adaca7c3cb93b",
+        "4e41951575f3734c00ff48d500bf3891",
+        "42207fa6be2b04e7c910fb2448db0507",
+        "ab7c4de1ab3d4866be5970c164f01e6f",
+        "545645d0b0beb0a8df07517b056dd7f4",
+        "154f46bb80bbd00ad735fb64baf4f252",
+        "5359f9a7f605c0bddb6152eb708856bd",
+        "411fc8a69a4a1ea6dcb309ce67b12e71",
+        "8d9e67c7351a7df50a3bde950f79c472"
+      ],
+      "chunk_count": 14,
+      "indexed_at": "2026-06-10T22:21:54.272Z"
+    },
+    "ableton-sdk/reference/essentials/concepts/2-handles.md": {
+      "content_hash": "c86f5cb1682f847de97a8acd937633307583b4711b97b1ae2a3151f4c01382e9",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "ca35010111d25d643f41648ae9f0f91c",
+        "02f97c28ea9f077e0b3372b39b01c557",
+        "d87d6fb0918f7564c460fbfe2e06854d",
+        "f87f9fd63f32e342599a3e4348624580",
+        "bccece66b8bb7c2ecba505e028c11156"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.272Z"
+    },
+    "ableton-sdk/reference/essentials/concepts/3-commands.md": {
+      "content_hash": "d820d972e0b3562ed5372919fecdf62b803625fb7c1b4cdd334fe0941edf8462",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "118466555a00ac067d2551dd1b0a48b6",
+        "072ef3ed3cc8756cbec17baeb041f1f5",
+        "aa4c87fea6b7b262a99589946efb8ebe",
+        "e18b7291d8e52b245dd2498b9f19827b",
+        "5f7665226d76d7d48cf667f9e3236245"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.272Z"
+    },
+    "ableton-sdk/reference/essentials/concepts/4-transaction.md": {
+      "content_hash": "7499c2f3c99770e50d85528cc754d0314d9e57675857a2fa018b96c609a13af9",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "fc5017d75b31e2bae4bbc892cfb87956",
+        "afc6b22241c80e3a5c018c90fd7b24f2",
+        "51dea072bd54e50c0aa78e4561ad8e97",
+        "6006b93bd5c54c9f58a82bde24b1632c",
+        "f4bcf2f08f454773136532457e4101d0",
+        "01b6d311b2735b3b14febf0c12f4f656"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.272Z"
+    },
+    "ableton-sdk/reference/essentials/concepts/5-progress.md": {
+      "content_hash": "697a24d24ab301d4c059808933988a6bb04f59ce534747eb63d46e86a787d79b",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "93d2ac56153bfd82de5393ebc42d74bb",
+        "289a67e89bd656991b2c0d4b6a290b55",
+        "f897f44cdebb6a987fee4af7d153ed37",
+        "50e47b5a4fc012f94bd26958d75209e0",
+        "172ad132878ac96cbefbe082ec347e17"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.272Z"
+    },
+    "ableton-sdk/reference/essentials/concepts/6-resources-and-filesystem.md": {
+      "content_hash": "4b3a0df199b70a79d3b94c1b7bf1df52e9aaabc8fe69ad117613940d1346d10f",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "23537e0aca7fa010e86fed135698ab44",
+        "8166703c09be702f6c194a080b16db92",
+        "e8c1c39a65e2cc129cd5bd662951e15b"
+      ],
+      "chunk_count": 3,
+      "indexed_at": "2026-06-10T22:21:54.272Z"
+    },
+    "ableton-sdk/reference/essentials/interface/1-context-menu-items.md": {
+      "content_hash": "11a521d11b363144902c98db6d5effc6a2325fa6f54675681552ac981dfdb8f2",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "10c7c9137a8f5fdc8ffda99fc7a21e8b",
+        "b3aec75a383baaf598040c407cb59b46",
+        "5c1c0987da8c376fdadedd10980c8f0a",
+        "e34c12f465e2f1c04e2d32c2af211e1b",
+        "1f6613215fb02e1fde7dae5477693fdd",
+        "511a8e139905a774e6799c98205ec0dc"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.272Z"
+    },
+    "ableton-sdk/reference/getting-started/1-introduction.md": {
+      "content_hash": "0addff5442711f9a8c2d945154bfe913e7b5ce1cb130ca0e7fe3cdcb458ad4dc",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "11b2c8b477a0a4a75258264939bb700c",
+        "434afbd218b8c8dce974e085ce8beb63",
+        "d72e5d9cdbc2609104c6b8fcc8b55cd6",
+        "a8bb34d701e2c12e2409236c58a4df0c",
+        "e47b68dd9ac87a26e384e6e7cd15d352"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.272Z"
+    },
+    "ableton-sdk/reference/getting-started/3-examples.md": {
+      "content_hash": "184a21709432e58d3d32ab3b501d6b774440ce3a05a68708bcb121dba9bb8a88",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "60ccd2288e81d5693b653ddf59ec5034"
+      ],
+      "chunk_count": 1,
+      "indexed_at": "2026-06-10T22:21:54.273Z"
+    },
+    "ableton-sdk/sdk-types.md": {
+      "content_hash": "e43288b06c84d54a5625c16da7cca17bbd408ca7a9e86164a79a20147e47a4f5",
+      "meta_hash": "b26b0607043878dac24443b7a89ddbd1da78b4dccc73e9806d3ee80c4366f957",
+      "chunk_ids": [
+        "b9a4bfccd63f26db2faa7a2efb9b1800",
+        "0f8e6f7a04465d0113e390272b55aa5c",
+        "384658dda243f15e410f03625d2560a2",
+        "69abd80370e613fbc82b42bf92c7d22d",
+        "d48fae493fead86168735450a341c712",
+        "ecf1aac488a8022eff746d2b97bcce05",
+        "fd5635d3714f72c764ff790141c4fb39",
+        "50fbce34caeac6ccbf7565a30ad8a6e7",
+        "7556205a029b7a1afc01c1d9bbfe6aff",
+        "910df2201319f58bb73b279a52d79116",
+        "52a6f950a967edc94cff5e151647184f",
+        "0ac715c834cf55a9a328c301186df2b4",
+        "145b385c53553df7379726e18b35f185",
+        "3f1a9b162cc1a787bd55bbc4c61ac181",
+        "8d9e2035452e999e6f542cd7bfabff72",
+        "398d6fce1c407c239bd6269e706e6046",
+        "90d0f8a42bf466b1ec93de20b173e365",
+        "06e843f43063d7147ee23989aa0169da",
+        "ac7f5dc75acdce4a746620556cce14a3",
+        "eb5a31683c852c158b84adcd79f65292",
+        "57fbf3641614d3e7f7cdca45f59badc4",
+        "3c538fe921c3a9601b80c168d1b1a10a",
+        "08f603d384c087c7fa892ef3bb7e8698",
+        "2ffecfa1b6dc6a71125a2d3e8a0e8608",
+        "d67460e4ae7535faf3aa909e0ef950af"
+      ],
+      "chunk_count": 25,
+      "indexed_at": "2026-06-10T22:21:54.273Z"
+    },
+    "community/README.md": {
+      "content_hash": "2955901eeb016f5e8723b14ea893f211aed9bdf9220c9f28a400fa6953ec56ba",
+      "meta_hash": "7c1fa0c39b56c5773a8dbaff4111013ad88111a6163601c06ed55b0f014ce363",
+      "chunk_ids": [
+        "4e9a8e79dc1573f4a58d20084a654b3e",
+        "40e71d4435055c7f7d61070f6ba76169"
+      ],
+      "chunk_count": 2,
+      "indexed_at": "2026-06-10T22:21:54.273Z"
+    },
+    "skills/midi-composer/continue-composition/SKILL.md": {
+      "content_hash": "0f3f705b3650a9c9640557bfd9e383dfbb1c80dac2ae2722d5c9000f355b542d",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "601599c344b989e4826cf6f7a948f55d",
+        "46899804d1f8a1397849f8f77265ed52",
+        "6bf320e6399373169779cd619e1399a3",
+        "7c5b356a6425d76767f11d2ca973edbb"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.273Z"
+    },
+    "skills/midi-composer/midi-clip-create/SKILL.md": {
+      "content_hash": "ba2be839b11099feddf7e90f85295b1669a5903189f9ffe8033577761049a958",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "045ca64a926d9deb20870ae40a42d2b7",
+        "3edd66b1b697d58fc6aa61b4b30f34bb",
+        "cbe15ebe6eade1d129c2db1133d2b244",
+        "426d6c09c725249b5bbda39d21697c60"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.273Z"
+    },
+    "skills/midi-composer/midi-clip-edit/SKILL.md": {
+      "content_hash": "33eb14c1c831a017e7156959b622ffa6f189d1c40466f3e1026dd9cfd43e89ee",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "f94c6192e76b9e398b78ac134d077a04",
+        "120dd380337c11e2a448d7e47c7e934f",
+        "3af7e7080e9a22657a9193827d5214e1",
+        "7625d0e71d4375baf213a943dbbb4175"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.274Z"
+    },
+    "skills/midi-composer/midi-tracks/SKILL.md": {
+      "content_hash": "5fefac5b3dba9ed374ef4d89c1a9de4caf8b58d324625c2f43b6a6781998b492",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "4ac721a5de416a6bee22eeca8be29a63",
+        "66fc21c81298aa07c18e27a0ee42a66c",
+        "62b4f404951ae6caa132a47f011f0f39",
+        "b745aaab13b92c8dbcc78e1166e45e7f"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.274Z"
+    },
+    "skills/midi-composer/reorganize-clips/SKILL.md": {
+      "content_hash": "ef2ed51d348162c22ed937ae95566ed188c047a5baf24652d3205087f8fc8b32",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "f4c06febab6ea8876ad0b00c08bfaa6a",
+        "2c853ee7203b728a2792003b53e1527d",
+        "9dc352957469875ee8c999b870e5f32c",
+        "67ca0a4f86c409c9507e075915f343d1"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.274Z"
+    },
+    "skills/midi-composer/SKILL.md": {
+      "content_hash": "a7e3b4cc1294f028fa9db4ecda611028b2449928fcb8368d7222591109a27e9f",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "7815cae75dabc12a82224f5c0c07c502",
+        "deeafde412e690cd486128186a582e04",
+        "9a676fcc10f7196cf8d4f6c7c88d0003",
+        "8575cd0fabdaa9043a93703930f10feb",
+        "9209e1c479c2a6d4397a4eabe063d890",
+        "57864254d676283075fcb2f927f5f144",
+        "0de86280b23ae732c5f63c24b7e10f5c"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.274Z"
+    },
+    "skills/music-producer/ableton-arrangement/reference/arrangement-clips.md": {
+      "content_hash": "455e5f7605c3cfc32b101f8424d0477a14799ead50522d34fd9a19e58ea34dc6",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "07864c66ec465769f253a47f3232ac76",
+        "106585a1f58c37d41233eea9808e0141",
+        "d3e7fea7700d9abf48d7bd4fd518f959",
+        "69ddff7fe856f6081cc4da5c4c09904c",
+        "b4fa656be9b2e408fef10233187c0e97",
+        "22b27e5a815f03449573658f10187b82"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.274Z"
+    },
+    "skills/music-producer/ableton-arrangement/reference/automation.md": {
+      "content_hash": "30e894a99eae9ed4fe10277a55d2aa9d13d7ccc881113136e46dbe7c84dcd1bd",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "856ce1fcd711a63c1d83ee8402a390c1",
+        "9590b0d4cd956c34fd19e0806b2deae9",
+        "8c31fb4b80c156fcf06cb1ae0b3cad24",
+        "f7afb9de6d99a2f209ad7573e9721457",
+        "d6e77d0e5462222ee5901b9986ea97b0"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.274Z"
+    },
+    "skills/music-producer/ableton-arrangement/reference/song-structure.md": {
+      "content_hash": "2a7b1fa685907a9b0612499a8a0291ee70a60725ef66617472b2a34f662b0553",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "0a71cbddf70ec74d910912155b4a2898",
+        "ab9cacf588f3c939744fcefff09cf7dc",
+        "c96afacec35553b474b455322fe826cf",
+        "3c9e3a1c96f8b8bbdb26086505047c28",
+        "c7be04258691591959794f0d2b281c88"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.274Z"
+    },
+    "skills/music-producer/ableton-arrangement/SKILL.md": {
+      "content_hash": "50d58dbee340f6dd094d98e07adcc61a94e296e25cf1a3b64a9f11db89fadf33",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "e6350d8b575e1bd78a17bdc2ec1cb236",
+        "c869c070359d5b102322e42bc7c3396f",
+        "ab6097a3e0524dbb68ef436b15ea914f",
+        "9e50d7c2043d78c0429b322788229ba8",
+        "121b21b9ba803f1533cb957bf2b11203",
+        "1723e423d9418369afc24f0c63dfd88c"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.274Z"
+    },
+    "skills/music-producer/ableton-midi/examples.md": {
+      "content_hash": "33b2ab662840e28cef2c62651da74c268d62b3381f50d8e6c39da8e8d7519f58",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "720d736b4d28facf398428b7614a9cbe",
+        "88c1cde00254f703284b487b2dbe3c10",
+        "8da784cbbc25f64b1f2a1ef26cb4bab9",
+        "cd2cf898a90f7992c12dbb4a2fc94acf",
+        "3dbfc7f45337aa7d4d88bbea11ee091a",
+        "54d2310352f8627c1d6b7578129dbc65",
+        "f6933bb7fb5f198298edd6ae6b2d9976"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.274Z"
+    },
+    "skills/music-producer/ableton-midi/reference/clips-and-notes.md": {
+      "content_hash": "2216fe3a4a4c16750212476b03f2362e461b0192d9139089571d470be84e04b4",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "54e8b7229de9bdf3e5ccc8c1f54aec4c",
+        "75738cf440a63a3a9debc438807f0ca2",
+        "5a1e74613bd7056c5305c160aad32248",
+        "b31f61d19c4c566a5a0683555e0f5258",
+        "0a10c500ad8ca9af324d95ad1fe60189",
+        "1bc3bdf2cb96a0fe42bf2c0f69acb39f",
+        "931263e6cf159027893df3f5f75c4feb",
+        "09fb7c1fc29d74ab4c14384121ccc230",
+        "e57a6012908bb5abdd7dbc371c46362e",
+        "d995ea94da7c5e27a2721a46c5cf7c74"
+      ],
+      "chunk_count": 10,
+      "indexed_at": "2026-06-10T22:21:54.275Z"
+    },
+    "skills/music-producer/ableton-midi/reference/midi-transformations.md": {
+      "content_hash": "272936877646ae3154754271503d622a53ec35e756aefa621beba825a25e0159",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "1c6ad316eb26fdd49f75768a882ae1b8",
+        "26482244961d75de1cd6faac84c99112",
+        "1ec762b0d7f945b1bf999083f9eb2d7d",
+        "cac112089f105c9e510fa434b7f200bf"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.275Z"
+    },
+    "skills/music-producer/ableton-midi/reference/quantize-and-groove.md": {
+      "content_hash": "ce7646ce8ff483fa95cfc2cf99877d2745b3597e9f5a8f7ed7fd63022b4a590b",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "c106528ba72e8f861a23ee31757c16b3",
+        "65a7425ef9223fe5843f3529d558ea00",
+        "b77c4102f02614634d1fe97f7aacb0fe",
+        "ea12c3654ae771c12343acc3810a79a0",
+        "3d7e3d8719222564ccfaa82aba2f50cd",
+        "11ec6bd82fa37c94d91586eb5acd913b",
+        "6bd72a996d10ed98a2de0f22c71a04a6"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.275Z"
+    },
+    "skills/music-producer/ableton-midi/reference/scales-and-harmony.md": {
+      "content_hash": "1c2005f024cea80db256171b7692be1c6aa3d42ce8598e929c15db9011471b10",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "49f8f30608567c19010d5d45cb4c6fc6",
+        "d680027e253e6cf7444390529c7dca30",
+        "0e11cf5774445ccf25947cb0443c5eb1",
+        "024b391fbf41550f1882598cfea119ce",
+        "277c7917f4378bbcc96aae9400d18834",
+        "b97f12771e4c36695ebcab6ca7a0dfbf"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.275Z"
+    },
+    "skills/music-producer/ableton-midi/SKILL.md": {
+      "content_hash": "3bc47e0bd171a1a0bfd19753228444cfaf60e075dc784cd3f4318648b5a3209b",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "9ad460e770075e6b77cc4ec9516238a0",
+        "aaa08e046c18c3dd665db23b7d661015",
+        "24b556003923b3dde0e6698f5daa7284",
+        "78f79d4e66cca4f404daec6cdcae307d",
+        "640664c74e12a5ac352df18e3cc4fba8"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.275Z"
+    },
+    "skills/music-producer/ableton-mixing/reference/mixer-and-routing.md": {
+      "content_hash": "3129335d380f228b48f5d6a007aa637a5573ef157a50e651dfab0ba739cc3e68",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "de3ee9b6ac214a61e9a4208118bf5d85",
+        "ae82ef5671154fc3b36465c997913b7d",
+        "259d307adf6a21fbacb18f6cdf1b928d",
+        "651d2c662c27503feb615593fee400b5"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.275Z"
+    },
+    "skills/music-producer/ableton-mixing/reference/mixing-techniques.md": {
+      "content_hash": "ef91b4a719161145ec8bd2334c08290ca65431ef36b51cb7e1f4249acb252acd",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "05acbefc48c5c13627c1c81adf16e464",
+        "c79aa7d900ee5ed8b238476f5cd9322d",
+        "601c5f2af0618c5cc59325d5d39430f1",
+        "3eaa3b5265c58ea2482afa27c7257d4e",
+        "6dddc762fb459546fd80538f95d291de",
+        "48d7e16dabebbd4c281ace33f0ca8117",
+        "e041ef4277aa42da929b470b057ab8f7"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.275Z"
+    },
+    "skills/music-producer/ableton-mixing/SKILL.md": {
+      "content_hash": "374e1223b109d836c3b98b0a15e30b4eaa6cdf9b98c1364905a6eab8cbef27b0",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "0133c3fa082c48808571bab7e8ee79aa",
+        "6397e379d89eff4a3f8274b4283d28d2",
+        "b2b04218eb3a7a33f7871feef3001f3a",
+        "3324df2c85bd1ff02337f53c3d8313a7",
+        "fec75e336b24127bedf16b4138e9f694",
+        "763a9825b3914b781157a7aeaeefdba5"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.275Z"
+    },
+    "skills/music-producer/ableton-playbooks/playbooks/eight-bar-loop.md": {
+      "content_hash": "63ad3d24432dbbeab16436444a5bc55ed4698bae26c54cc11c194f4ce752ec1d",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "9da66cab5d6fdab01dc95d52c34e02ad",
+        "0e07ee1a6a0e20e0b3a9a6fee13599a8",
+        "9493a242a2959241cf38e03b11a51d99",
+        "ebdb8cebf820dff7a1086eab0f84ed69",
+        "0405e47a291e58a294a21353b794b8b6",
+        "d425cb476a5e5ff537a72fe35c532627",
+        "a5f78c37408afe0700de4f4d99ce58a2",
+        "c40a892bc377e3ca3d1f898bae52371f",
+        "361375cd0dea925f8e7f1bd49fe077cf",
+        "83e4f6f0cf0dcaff3ff4a1b2b7dc4cef"
+      ],
+      "chunk_count": 10,
+      "indexed_at": "2026-06-10T22:21:54.276Z"
+    },
+    "skills/music-producer/ableton-playbooks/SKILL.md": {
+      "content_hash": "62c756d497bbc0d82f4be44a549636242da25c39102f6ebe81e5dcff09e07ab7",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "f0b4749b651a4e63a3235eb21c9079bd",
+        "8e9714beb399d0e9bccd3228fb6c5739",
+        "134acd99979b5a66f0c273d9df3ed7e9",
+        "fce9a40a71d2b0a32ed86b58fd85a91d",
+        "73f893437880a7df757d8776e548e7ce",
+        "f362dccc0d9ad1cb582cfdb20e336889"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.276Z"
+    },
+    "skills/music-producer/ableton-safety/reference/guardrails.md": {
+      "content_hash": "5e9c98f8e43b06cd33a08d3d3dea86ec9a4e249c60bf259a4215c151b05e0e82",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "925b00fd281bacea673a783d8cc7c0df",
+        "01a04bc55210c071fdb0c73d0f1c840b",
+        "7edc21d7847aacee886989d54018b4f0",
+        "ee3cbc563904a6333a4c3b29cc7bfd5e",
+        "d77966d4a85b11ee3b273b51df28e774",
+        "6469ce3764ce4549ce6ab587f6c7a754",
+        "a29e1fd118acfcea6cef3cbb1a9b5fe0"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.276Z"
+    },
+    "skills/music-producer/ableton-safety/reference/ui-dialogs.md": {
+      "content_hash": "4093613410f8b23277c896f20a08f9514b8afdf674ada23dce250024764d01a1",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "6c1d860e1b9e7dfc3ff04d3b07e8ef14",
+        "5cc312f357c1ba5b66bac1e1f061d6fd",
+        "9692f2d2eb4fa49dd0565585efb02184",
+        "555660feb3c11851ac5d207a3047c18f",
+        "d80cdbe7cbdbf11ed4ce468f78ca3d0f"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.276Z"
+    },
+    "skills/music-producer/ableton-safety/reference/undo-and-transactions.md": {
+      "content_hash": "2794365c6802ba3703117e184fce54ea5e682c002e972f9252e6204df828f310",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "f49819b2305b7b76c14ad78be4c379d2",
+        "c0c95dd8963b7ef2f6b7644ce3b9f9da",
+        "ace6cda0c3efd515cbc7ba3239a387a3",
+        "e455f53cbc422338c7a77334a7dc2eba",
+        "e0fcc51a952e6f8bedabe544fec798e0",
+        "4f6ddad955b7afd0d37251d816f85332"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.276Z"
+    },
+    "skills/music-producer/ableton-safety/SKILL.md": {
+      "content_hash": "89938770cd0d1fa9789bc6116740de29a0d26fa7564f4c355e3744ad558c1a09",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "6484654e71ce1446eb8c42dbfd23e278",
+        "a56508b7425a4232f3e4a9246c2e3ba5",
+        "10cbc4ab2a1f06fc4724d1353bdb276f",
+        "5bee3700f44fff047341a3b8514092cf",
+        "cda58d50f2d9e213f6158df279da0757",
+        "b9b6e095c31b22081bf4e5edf5baeda5"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.276Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/auto-filter.md": {
+      "content_hash": "d785078e9663a1e33a8d5c499c6b605899790ee504f84750f8f52a82ce176178",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "13ff105eea1c514614a69d580fa81b42",
+        "15d5bdfc405f63e53c90c68ab4f31c3f",
+        "cb45c92099f19d9c73ed30ccaa476e52",
+        "348dae872cfd618420cc0063eccf78a0"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.276Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/chorus-ensemble.md": {
+      "content_hash": "5d023eeb14c86de45de34608371088a6911b3b3e47303765495a38e17bcec4d4",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "022c206372c5ad42942cc3d7397cc5c5",
+        "0bebf96110876112c8845dfc8653aff0",
+        "996e62574ce98df27922249725871b64",
+        "6e461fdb319eca74fc4342a740023e80"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.276Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/compressor.md": {
+      "content_hash": "ec77e9db42df8538ac1609da1a612cbdae0ed705874ac29fd908131474e8cfe0",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "334b433ea4a5bbe5b60dafbfabeac8e1",
+        "e5d6bc155e3aea86af06c02135229ee4",
+        "1c56f80e48fb934e5251d713c88f68d6",
+        "bb7d1a1731b99c8486acea96159d8155"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.276Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/delay.md": {
+      "content_hash": "a1f5993237bc88f87129553cbbdf3177ce21c912e33dadb95faee265b9eb512f",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "cef2780e9ffc314146a0dc4a76d02f0d",
+        "dd289070cadb9bc8279afe34396a0c7c",
+        "97e45bf560a9b0fd36d00c50c38ceb49",
+        "93b2f2d0ca8c91317fd0a4ad8f253054"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.277Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/drift.md": {
+      "content_hash": "97e40e44b19a6b17394463718b1ab442fa6f4eac5ae6466ec5992b8d84ee7b31",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "6fd9dec9e9de5d96ade9ab1151c0185f",
+        "d5b9353702906a9717a31fadb2a2a3c6",
+        "839b7a3caee0de4ef6802ae51144ebeb",
+        "5dcb2a8023ad39228b9de3ca7616c825"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.277Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/drum-rack.md": {
+      "content_hash": "3b67c5bb43ae2d034eb67d0afebf4ee6e5902510b599ad3edfc8886a80f3dde4",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "939393462368ebf9434aa2446caa9229",
+        "d7e28e1fff06fe6f0dc259180c34cb15",
+        "1b8e46b55489d63fdd6b52e7d31bb386",
+        "853902903302d9af36439a69ab976869"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.277Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/echo.md": {
+      "content_hash": "c103a714e34bc343c85650dfeac8d1e7a21379fdea0b97d917a6403bd719ba38",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "b95bdcf9598e28496f978b30e2ace6d7",
+        "31f472e0c32ea862f03fc1888db962ea",
+        "9fd4a3be9b233593eb2240958ce56f3c",
+        "e012efe8f00f7662517c5609cda7679d"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.277Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/eq-eight.md": {
+      "content_hash": "5e23f0c3166f52ad1ec044c0dd1aa616bf1d7124da9df9549ac2f39b65a90ce0",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "663c7800ea378024d1e586c2e5f11681",
+        "25a0e258994663cc481f5a219f47c655",
+        "c0733d35e7e803c8ff7fe95684806e59",
+        "d4b2b63389ffd37b450a9fbf856c2867",
+        "2e8cc046b1e89460f54aebb5ce1a008f"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.277Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/glue-compressor.md": {
+      "content_hash": "a69bcc8b2e0c8f0822ab028be5e4df702c863d7fa97545da53d1a50ad2e44f33",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "a261f80c7f494e90435b13b63d4e94c7",
+        "c5d3140dc171a689a7b73ba80df7da61",
+        "1daadc207226bd8ee56ffc56451ff662",
+        "813f3ad4b543be0b7d67677f705ec2e7"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.277Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/operator.md": {
+      "content_hash": "b882297bfd607fa800e1d19e2aa239f5c8e6e9c7502a087adf13394a0ee30b64",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "e96edfdeebe7ec870c2522ca6aef959f",
+        "417b8d27cc7da56ebd19e480f743b248",
+        "650b50c195fa41a73b18172b47cf1795",
+        "1d51a47145ae620461bcea693cbd1da2"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.277Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/reverb.md": {
+      "content_hash": "05d48cf7669324c5f986882f12a148fa172432d326abaf5cd4c75e2fc87ac15e",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "ba2061cacba2916ff26f8d3d24fbd2b2",
+        "e4f9df8bd42ef75497ba1b8bde174751",
+        "7d845d699651d966dc07de30942cfa28",
+        "d5ae83fda92da38090291db8fa8878e6"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.277Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/saturator.md": {
+      "content_hash": "d409e1041468b76e15553d67ef6f1817557f59b2ce6d73bcf92f1a67e9ca8edd",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "ebc6a4486f64d1ebb5dcd9031b3cf01c",
+        "48e800e3d89e7142b386f60324f16585",
+        "a09d0eda07e369cd8282de65067effe9",
+        "ab30112847eca7f07abb35cf89bee699"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/simpler.md": {
+      "content_hash": "4aff17945e81231688627fa18fc7744d3c316192bb9d451d96f6dba1ad9e15e8",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "204efde811bd9fe08f929b36676565b2",
+        "f39368ccc64200e57a199940ee911450",
+        "e5c9a8feb09178eaa3d26d21f4718d2c",
+        "727dbfce53091694fdc16b60593b831c",
+        "2ee3a1b05c85e1c575314b8113b58c19"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/utility.md": {
+      "content_hash": "c9cc24bd02f76dcd7c286e372ba3c63889ca40c7cbd3373452c3d85fda77c231",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "8eab55dc494c6a96040eb6cce3f3110d",
+        "b6723796e92b7d4e3a4ca98bc2aa598d",
+        "84b87e9417c3c48cd5eebd68e314ba90",
+        "eca21097c6cf7cbeae2a6eeb3d4d5115"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/ableton-sound-design/devices/wavetable.md": {
+      "content_hash": "7d29cfe1be3893ddac83f4711149cfe13368caed80858b2f43b80fe98c1e5dfe",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "a3e16ac37d6b9c0f4f301783fc5907ad",
+        "c5e3ebdde6d283d69386fdb054617d21",
+        "809d88a0cacd70128104274316e8a383",
+        "f843fd318419e10c024ca335a8b312cf"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/ableton-sound-design/reference/devices-and-params.md": {
+      "content_hash": "cf985ba21644cb2e0368c9237f8d5788403b9683804922cc5396fe3894c284c7",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "aa8814eea87a9ccea8385d3b28e02326",
+        "2b6c967a215cc2f08a664fc9f0c7c971",
+        "cf37883317ffaf244178730a625c7a3c",
+        "c1a32fc3cc89958ff2232ec91c645248",
+        "11fd4b6df11943af03b87032bb8977ba",
+        "fabca5cd9936398480e6905da22d4701",
+        "11d2db432ed72d1f66115781696590b8"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/ableton-sound-design/reference/drum-racks.md": {
+      "content_hash": "878093eb6ca8615f3418ff0c354f64a4c2dee56f1ae42e428e349ecae86a9a0e",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "7b30dbeec5832d46e76d97af7af23a99",
+        "9a479524e97251ae48a9f10291efb2ad",
+        "98297a962adc68d7fef0389da22b2cae",
+        "f5b58d3ea6237c4e454019e4c37c5d63",
+        "3a419dcc90ff0334147e6c005c0b040a",
+        "69dadfa62ecc5e709aca39fe95ade716"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/ableton-sound-design/reference/racks-and-macros.md": {
+      "content_hash": "a622d779449ec9c0c566e515e6f5bc38ad57ee13e7d19b7abf56bc572ddb15dd",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "565caa690654cf7f295053998baced17",
+        "974005fe98f4d90993b934fcc068ca2f",
+        "bafde33542c4763434db87e27009e6de",
+        "47cb33c1e339d6db0b14c58a99b5f2d3",
+        "008298c3eeb2cf721857a72e3c2be16d",
+        "8a778ca959a3f2a1f665d38a812c90ad",
+        "bcf076d37041eb93bb6c69a44e285da6"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/ableton-sound-design/SKILL.md": {
+      "content_hash": "cdfe7659b96a20ed7fb56cb63191ed81cf505191e964c9d6e4efd08f5fcc184c",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "cc62d0b0455ed506a08aea2b6a31adb9",
+        "d7e53399859f9b46a3ed1e255b108533",
+        "b5281101104d3002f23612868c968e1f",
+        "ede0d7fba4691aedf3985aa3d088d01b",
+        "296d053bf432b53601a3826b30770c23",
+        "9edba20d1f415d8779a383223f773475"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/ableton-warping/SKILL.md": {
+      "content_hash": "a82171550634c0aa8735383207459705f7295075f0a1d124cdccd3e26c100481",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "c67b23a0ad476d1d37b7dd9fd005568c",
+        "96eb7275877a546279b13b2aa9bf3298",
+        "6dd102aaa4a2ee5f41debe1e62fb08e3"
+      ],
+      "chunk_count": 3,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/music-strategies/SKILL.md": {
+      "content_hash": "654bce1f51504994681a6f5b24d7cd70057b79eddc766843002c7f93bbcff1e8",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "0ccdc1e9bd15283082d8f77d320d0254",
+        "adb9537b24f6bb8a92e5be9e230e6db4",
+        "70f30d547dcb1bc60c9f974d10c01c9d",
+        "22d1db5eb7e1e62620b3e94ae5ccb51f"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-10T22:21:54.278Z"
+    },
+    "skills/music-producer/music-strategies/strategies/harmony.md": {
+      "content_hash": "f557810dd448bda9d9416dc610acf34f7918bf6cc5697fc62e3be1a0f096d1c0",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "aa936293f634a6b91cf901bfda36a84d",
+        "d98cf47ddc5faac89900b42b5815b60c",
+        "3c98be8dc7bbe077e17584e0de4d8dfc",
+        "f9bbe08a57f9b7a99e6090d0275a22ab",
+        "b7d06ab24feb65c6b65d0a4cb3f56c7b",
+        "479d8110d17fa7dc7da9ab7b01c399f1",
+        "a73ed3632fd7680864333ae697718e9a"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.279Z"
+    },
+    "skills/music-producer/music-strategies/strategies/melody.md": {
+      "content_hash": "6efc37dfed5de5813dfab6b1b8460d3e1bee8f45642d6a02dbd9f065270479a6",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "b5b2c3c4bc29b297b7e55326a9b146d0",
+        "f49541a182308c05c901dced0eaa7473",
+        "937c2f035697e373c79bb0d787c69959",
+        "3b3be0f6ccfa08f18a4ba157f64b38f4",
+        "0c7b9eca06a7fe1bbba679b0c5cdb1e6",
+        "997e5548642d1da4184ad993f029a3b9",
+        "7ba829523dbafab5eafb10e77e608850"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.279Z"
+    },
+    "skills/music-producer/music-strategies/strategies/rhythm.md": {
+      "content_hash": "78de790d116bb8c40cd35bf92765cab2fb35c952efc6a4389da55b25235ed257",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "c071851dfc5e532c8ffbef170950478a",
+        "d04a713be3f36436dd785d329a741fa4",
+        "6330373ad492d23202f28589b06789bb",
+        "977f0fcdaa040d8e263b296bb81b5cde",
+        "4edf0a250514c2e245eecc1e16b92ecf",
+        "341916b92ccf0d83bc2423341e98d13f",
+        "d768156d81a138697c3508a870b901bf",
+        "b7b3e42185dc3be1e42b2e466d75e77a",
+        "504cb8aa274168025758e806dcff1c74"
+      ],
+      "chunk_count": 9,
+      "indexed_at": "2026-06-10T22:21:54.279Z"
+    },
+    "skills/music-producer/repr-drum-grid/SKILL.md": {
+      "content_hash": "849ce305cf6edf06766c256274783c1377796b1f4cc86587e26d64dae04c904e",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "f72131941316efb34a605e44fa696231",
+        "62a88cb02a4a84e046d40a62ac2cf62d",
+        "1ccbb804c5a19f83b623b2012d1c4258",
+        "17f3b9c70b86935f919224ea1cb6afe3",
+        "f71c604c9b741f3d3725c8da2f9d342c",
+        "981492bec22fccf6a6b9da4e1622a7cd",
+        "24991e317f648adbdcbb8cd6cb4ed3b6"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.279Z"
+    },
+    "skills/music-producer/repr-harmony/SKILL.md": {
+      "content_hash": "8b73f1c592c3a2132a10d21ba87aebe0eb19d9ded6cd78e78c1ecfa8e79ca687",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "963a04d6961fb974cbf0405148f3adff",
+        "b6d4578d20e267361238fa0ad0ce3e17",
+        "88b6f3a4fc052b151f281dd1f3ac7eca",
+        "08597c85b95e3b969421eceb885b3680",
+        "130712818137bce9e8a0d7484a9d320c",
+        "10b194a2f6d7d366e905e4420a59c1c0"
+      ],
+      "chunk_count": 6,
+      "indexed_at": "2026-06-10T22:21:54.279Z"
+    },
+    "skills/music-producer/repr-notation/SKILL.md": {
+      "content_hash": "332c2fc157195ad32bb224f978b0d7dccabc53ee5027d22c6970af7915ecdd03",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "b5daf88cb565234329a45decde2ed8d8",
+        "57cd38a5c0c37fdebf4baaec86dd1730",
+        "c16209b0ef33ed650da506f8cc1722e4",
+        "b35071eb332f820ad718c7c249e1e5de",
+        "73842983c6707086ed66c95e472d5596",
+        "d44d9495ed3088630f15dad3e93fed29",
+        "a96b33049d3b7f527182365c5a8a2143"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.279Z"
+    },
+    "skills/music-producer/repr-piano-roll/SKILL.md": {
+      "content_hash": "d544642c6b9ef624b7d522eb58923e0119d3a185d8d62c2e6620425f9e276b87",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "e84d537234ed42df0b0d6492715400d4",
+        "ad9c4c7eac2159f2bc50879f4d89fb40",
+        "b42c42155e7d4808e8e691858c547a03",
+        "439e0b61de951d0aa60ab844f54752f3",
+        "9424c05dbf6aca359920861f0bdf0f18",
+        "5d34b5911c3da1512083364b2a6be88f",
+        "a552b662ea506f202e66a55b9e7b41e8",
+        "779e342087afeffd76ad1fb5d42d1b6e"
+      ],
+      "chunk_count": 8,
+      "indexed_at": "2026-06-10T22:21:54.279Z"
+    },
+    "skills/music-producer/repr-structure/SKILL.md": {
+      "content_hash": "bd4c181caae2339a4302689ccddaed52e309e7c60335440d3aa58d08125ec203",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "4d98167f8212208815da3530fe1a5506",
+        "3a3a6150c414f8945a2b8ba487a37634",
+        "73d37e5a032aefef156b28d60f6f0afb",
+        "2d5aa98ab0d32db7f3e59f08ae5d11a7",
+        "6bfb5c843515d8e312cc6c10b308344b",
+        "8a1bbbf45f6620618e9c0bf1416928e4",
+        "ee478b180a52fbff81e722505b13e8fe"
+      ],
+      "chunk_count": 7,
+      "indexed_at": "2026-06-10T22:21:54.280Z"
+    },
+    "skills/music-producer/SKILL.md": {
+      "content_hash": "b40617960a79ea4470e84883fad3fb61ca9fbafb7f1e8dc144513aa5b246738b",
+      "meta_hash": "8f300e6360d861f362b0ab8eb5d04cc0a628f80ab1433ea5e8ae840edb804d4f",
+      "chunk_ids": [
+        "3271e47345e98e2414060f59a86d1018",
+        "18ea751a5748de8e17687565a0544467",
+        "54298f28d925e51c75dc501e43549aa6",
+        "a3f6e4a7871701e2f5986d21bb4e2d5d",
+        "ce6a4be03cb94fb4950dae4efb95ed51"
+      ],
+      "chunk_count": 5,
+      "indexed_at": "2026-06-10T22:21:54.280Z"
+    }
+  }
+}

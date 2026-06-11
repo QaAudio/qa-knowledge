@@ -1,0 +1,11 @@
+{
+  "source": "QuantumAudio Ableton SDK agent guides",
+  "origin": "quantumaudio",
+  "source_url": "",
+  "license": "Internal — derivative agent notes distilled from the Ableton Extensions SDK",
+  "generated_by": "",
+  "generated_at": "2026-06-10",
+  "last_edited": "2026-06-10",
+  "source_type": "sdk_reference",
+  "notes": "Hand-authored quickstart/recipes/cheatsheet for driving Live via the qa-ableton-mcp run_code sandbox (previously served as ableton:// MCP resources)."
+}

@@ -1,0 +1,11 @@
+{
+  "source": "Ableton Extensions SDK 1.0.0-beta.0",
+  "origin": "vendor",
+  "source_url": "https://ableton.github.io/extensions-sdk/",
+  "license": "© Ableton AG — converted/derivative for agent retrieval; originals in vendor/extensions-sdk-1.0.0-beta.0 are not redistributed",
+  "generated_by": "scripts/convert-sdk-docs.mts (turndown + jsdom)",
+  "generated_at": "2026-06-10",
+  "last_edited": "2026-06-10",
+  "source_type": "sdk_reference",
+  "notes": "api/, reference/, examples/, and sdk-types.md are generated from the vendored SDK by npm run knowledge:convert-sdk. guides/ are hand-authored agent notes. Re-run the converter after bumping the vendored SDK."
+}

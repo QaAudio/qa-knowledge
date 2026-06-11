@@ -1,0 +1,27 @@
+# @ableton-extensions/sdk
+
+## Hierarchy Summary
+
+-   [DataModelObject](classes/DataModelObject.md)
+    -   [Application](classes/Application.md)
+    -   [Clip](classes/Clip.md)
+        -   [MidiClip](classes/MidiClip.md)
+        -   [AudioClip](classes/AudioClip.md)
+    -   [Track](classes/Track.md)
+        -   [MidiTrack](classes/MidiTrack.md)
+        -   [AudioTrack](classes/AudioTrack.md)
+    -   [Song](classes/Song.md)
+    -   [ClipSlot](classes/ClipSlot.md)
+    -   [CuePoint](classes/CuePoint.md)
+    -   [TakeLane](classes/TakeLane.md)
+    -   [Chain](classes/Chain.md)
+        -   [DrumChain](classes/DrumChain.md)
+    -   [ChainMixer](classes/ChainMixer.md)
+    -   [Device](classes/Device.md)
+        -   [RackDevice](classes/RackDevice.md)
+            -   [DrumRack](classes/DrumRack.md)
+        -   [Simpler](classes/Simpler.md)
+    -   [DeviceParameter](classes/DeviceParameter.md)
+    -   [TrackMixer](classes/TrackMixer.md)
+    -   [Sample](classes/Sample.md)
+    -   [Scene](classes/Scene.md)

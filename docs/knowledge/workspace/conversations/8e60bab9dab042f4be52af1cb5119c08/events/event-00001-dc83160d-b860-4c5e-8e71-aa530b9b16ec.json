@@ -1,0 +1,1 @@
+{"id":"dc83160d-b860-4c5e-8e71-aa530b9b16ec","timestamp":"2026-06-10T21:47:04.067699","source":"user","llm_message":{"role":"user","content":[{"cache_prompt":false,"type":"text","text":"can you access the qa-knoledges-mcp base? like search for ableton please"}],"thinking_blocks":[]},"activated_skills":[],"extended_content":[],"kind":"MessageEvent"}

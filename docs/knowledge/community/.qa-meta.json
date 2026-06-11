@@ -1,0 +1,11 @@
+{
+  "source": "Community contributions",
+  "origin": "community",
+  "source_url": "",
+  "license": "Per-contribution — see each file's folder .qa-meta.json or header",
+  "generated_by": "",
+  "generated_at": "2026-06-10",
+  "last_edited": "2026-06-10",
+  "source_type": "user_note",
+  "notes": "Placeholder for community-contributed examples and techniques. Add a per-folder .qa-meta.json to record the contributor, source URL, and license."
+}

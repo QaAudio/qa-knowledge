@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "id": "ableton-sdk",
+      "type": "glob",
+      "paths": ["ableton-sdk/**/*.md"],
+      "enabled": true
+    },
+    {
+      "id": "skills",
+      "type": "glob",
+      "paths": ["skills/**/*.md"],
+      "enabled": true
+    },
+    {
+      "id": "community",
+      "type": "glob",
+      "paths": ["community/**/*.md"],
+      "enabled": true
+    }
+  ]
+}

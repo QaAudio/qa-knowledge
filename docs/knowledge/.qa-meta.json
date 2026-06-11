@@ -1,0 +1,11 @@
+{
+  "source": "QuantumAudio knowledge base",
+  "origin": "quantumaudio",
+  "source_url": "",
+  "license": "Internal — QuantumAudio research prototype",
+  "generated_by": "",
+  "generated_at": "2026-06-10",
+  "last_edited": "2026-06-10",
+  "source_type": "repo_doc",
+  "notes": "Root defaults for docs/knowledge. Nearest .qa-meta.json wins; per-folder files override these fields."
+}
