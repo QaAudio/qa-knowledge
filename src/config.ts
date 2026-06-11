@@ -1,13 +1,26 @@
+import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { EmbeddingConfig, KnowledgeConfig, QdrantConfig } from "./types.js";
 
 const DEFAULT_KNOWLEDGE_ROOT_REL = "docs/knowledge";
+const SOURCES_MANIFEST_REL = path.join("config", "knowledge.sources.json");
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-/** Repo root when resolved from packages/qa-knowledge/dist or src. */
+/**
+ * Repo root: nearest ancestor of this module that contains
+ * `config/knowledge.sources.json` (standalone qa-knowledge or monorepo root).
+ */
 export function defaultRepoRoot(): string {
+  let dir = __dirname;
+  const fsRoot = path.parse(dir).root;
+  while (true) {
+    if (existsSync(path.join(dir, SOURCES_MANIFEST_REL))) return dir;
+    const parent = path.dirname(dir);
+    if (parent === dir || dir === fsRoot) break;
+    dir = parent;
+  }
   return path.resolve(__dirname, "..", "..");
 }
 
