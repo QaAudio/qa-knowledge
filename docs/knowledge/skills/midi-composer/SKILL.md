@@ -7,17 +7,7 @@ description: MIDI composition workflows for Ableton Live via qa-ableton-mcp — 
 
 This is the **entry point** for MIDI composition in Live. It does not carry the deep
 technique itself — it names the **workflow**, then sends you to source the real
-reference from **qa-knowledge-mcp** (qdrant) and the linked `ableton-*` skills. The
-**qa-ableton-mcp** server is the *action* layer (`ableton_run_code`, scan/read tools);
-qdrant is the *knowledge* layer.
-
-## Knowledge-first rule (non-negotiable)
-Before composing any musical logic or running your first `ableton_run_code` for a
-task, **`search_knowledge`** (qa-knowledge-mcp) for the technique/recipe/SDK limit —
-filter with `skill_name` (e.g. `ableton-midi`, `ableton-arrangement`) when you know
-the area. Use `get_knowledge_chunk` for full text and `invoke_skill(name="…")` for a
-full skill body. **Never guess SDK shapes, parameter names, or hard limits** — look
-them up. Re-search when you hit an error or an unfamiliar object.
+reference from **qa-knowledge-mcp** (qdrant) and correct skills.
 
 ## Workflow children (this directory)
 Pick the workflow that matches the request; each one is a short checklist that points
