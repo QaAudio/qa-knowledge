@@ -1,15 +1,11 @@
-import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { IndexState, IndexedFileState, KnowledgeChunk, KnowledgeConfig } from "./types.js";
-import { chunkDocument } from "./chunk.js";
-import { sha256 } from "./hash.js";
-import { embedTexts } from "./embed/index.js";
+import { embedCorpus, type EmbedCorpusOptions, type EmbedCorpusResult } from "./embed-corpus.js";
 import {
-  collectSourceFiles,
-  loadSourcesManifest,
-  provenanceFingerprint,
-  type SourceFile,
-} from "./sources/loader.js";
+  embeddingChunkToKnowledgeChunk,
+  scanEmbeddingFiles,
+  type ScannedEmbeddingFile,
+} from "./embedding-files.js";
 import {
   createQdrantClient,
   deleteChunksByIds,
@@ -27,18 +23,17 @@ import {
   loadIndexState,
   saveIndexState,
 } from "./index-state.js";
+import { collectSourceFiles, loadSourcesManifest } from "./sources/loader.js";
 
-export type IndexMode = "incremental" | "full";
-
-export type IndexOptions = {
-  sourcesFile: string;
+export type IndexEmbeddingsOptions = {
+  sourcesFile?: string;
   sourceFilter?: string[];
   batchSize?: number;
-  mode?: IndexMode;
+  full?: boolean;
 };
 
-export type IndexResult = {
-  mode: IndexMode;
+export type IndexEmbeddingsResult = {
+  mode: "incremental" | "full";
   files: number;
   chunks: number;
   added: number;
@@ -48,39 +43,44 @@ export type IndexResult = {
   collection: string;
 };
 
+export type SyncKnowledgeOptions = EmbedCorpusOptions;
+
+export type SyncKnowledgeResult = {
+  embed: EmbedCorpusResult;
+  index: IndexEmbeddingsResult;
+};
+
 /**
- * Index markdown and SDK sources into Qdrant.
+ * Upsert committed sidecar embeddings into Qdrant.
  *
- * Incremental by default: only new/changed files are embedded, stale chunks are
- * deleted, and removed files are purged, tracked via `docs/knowledge/.qa-index.json`.
- * Pass `mode: "full"` to rebuild the collection from scratch.
+ * Incremental by default: reconciles against `docs/knowledge/.qa-index.json`.
+ * Pass `full: true` to drop and rebuild the collection.
  *
  * @example
- * await indexKnowledge(config, { sourcesFile: "config/knowledge.sources.json" });
- *
- * NOTE: the live Qdrant upsert/delete + `.qa-index.json` round-trip was not
- * exercised in the agent env (Docker daemon down). Verify with
- * `npm run knowledge:index:full` then `npm run knowledge:index` — see TODOLLIST.md
- * "Qdrant knowledge stack — index + search e2e".
+ * await indexEmbeddings(config);
  */
-export async function indexKnowledge(
+export async function indexEmbeddings(
   config: KnowledgeConfig,
-  options: IndexOptions,
-): Promise<IndexResult> {
-  const manifestPath = path.isAbsolute(options.sourcesFile)
-    ? options.sourcesFile
-    : path.resolve(config.repoRoot, options.sourcesFile);
-  const manifest = loadSourcesManifest(manifestPath);
-  const files = collectSourceFiles(config.knowledgeRoot, manifest, options.sourceFilter);
-
+  options: IndexEmbeddingsOptions = {},
+): Promise<IndexEmbeddingsResult> {
   const client = createQdrantClient(config.qdrant);
   const statePath = indexStatePath(config.knowledgeRoot);
   const prevState = loadIndexState(statePath);
+  const sourcesFile = options.sourcesFile ?? "config/knowledge.sources.json";
+  const manifestPath = path.isAbsolute(sourcesFile)
+    ? sourcesFile
+    : path.resolve(config.repoRoot, sourcesFile);
   const manifestHash = hashManifestFile(manifestPath);
 
-  const scoped = Boolean(options.sourceFilter && options.sourceFilter.length > 0);
+  const allSidecars = scanEmbeddingFiles(config.knowledgeRoot);
+  const sourceFilter = options.sourceFilter;
+  const scoped = Boolean(sourceFilter && sourceFilter.length > 0);
+  const sidecars = scoped
+    ? filterSidecarsByManifest(config, manifestPath, sourceFilter!, allSidecars)
+    : allSidecars;
+
   const incompatible = prevState !== null && !embeddingCompatible(prevState, config.embedding);
-  const requestedFull = options.mode === "full";
+  const requestedFull = options.full ?? false;
   const fullRebuild = requestedFull || prevState === null || incompatible;
 
   if (incompatible && !requestedFull) {
@@ -92,13 +92,13 @@ export async function indexKnowledge(
   const batchSize = options.batchSize ?? 16;
 
   if (fullRebuild) {
-    return runFullIndex(config, client, files, statePath, manifestHash, batchSize);
+    return runFullIndex(config, client, sidecars, statePath, manifestHash, batchSize);
   }
   return runIncrementalIndex(
     config,
     client,
-    files,
-    prevState,
+    sidecars,
+    prevState!,
     statePath,
     manifestHash,
     batchSize,
@@ -106,75 +106,104 @@ export async function indexKnowledge(
   );
 }
 
-/** Read a file, chunk it, and stamp content + provenance fingerprints. */
-function buildFileChunks(file: SourceFile): {
-  chunks: KnowledgeChunk[];
-  fingerprint: CorpusFingerprint;
-} {
-  const text = readFileSync(file.absolutePath, "utf8");
-  const chunks = chunkDocument({
-    sourceId: file.sourceId,
-    sourceType: file.sourceType,
-    title: file.title,
-    skillName: file.skillName,
-    provenance: file.provenance,
-    text,
-    isSdkDts: file.isSdkDts,
+/**
+ * Generate sidecars then upsert them into Qdrant.
+ *
+ * @example
+ * await syncKnowledge(config, { sourcesFile: "config/knowledge.sources.json" });
+ */
+export async function syncKnowledge(
+  config: KnowledgeConfig,
+  options: SyncKnowledgeOptions,
+): Promise<SyncKnowledgeResult> {
+  const embed = await embedCorpus(config, options);
+  const index = await indexEmbeddings(config, {
+    sourcesFile: options.sourcesFile,
+    sourceFilter: options.sourceFilter,
+    batchSize: options.batchSize,
+    full: options.full,
   });
+  return { embed, index };
+}
+
+function filterSidecarsByManifest(
+  config: KnowledgeConfig,
+  manifestPath: string,
+  sourceFilter: string[],
+  sidecars: ScannedEmbeddingFile[],
+): ScannedEmbeddingFile[] {
+  const manifest = loadSourcesManifest(manifestPath);
+  const allowed = new Set(
+    collectSourceFiles(config.knowledgeRoot, manifest, sourceFilter).map((f) => f.sourceId),
+  );
+  return sidecars.filter((sidecar) => allowed.has(sidecar.sourceId));
+}
+
+function sidecarFingerprint(sidecar: ScannedEmbeddingFile): CorpusFingerprint {
   return {
-    chunks,
-    fingerprint: {
-      contentHash: sha256(text),
-      metaHash: sha256(provenanceFingerprint(file.provenance)),
-    },
+    contentHash: sidecar.file.sha256,
+    metaHash: sidecar.file.generated_at,
   };
 }
 
-/** Embed and upsert a flat chunk list in batches. */
-async function embedAndUpsert(
+function toFileState(sidecar: ScannedEmbeddingFile): IndexedFileState {
+  return {
+    content_hash: sidecar.file.sha256,
+    meta_hash: sidecar.file.generated_at,
+    chunk_ids: sidecar.file.chunks.map((c) => c.chunk_id),
+    chunk_count: sidecar.file.chunk_count,
+    indexed_at: new Date().toISOString(),
+  };
+}
+
+async function upsertSidecarChunks(
   config: KnowledgeConfig,
   client: ReturnType<typeof createQdrantClient>,
-  chunks: KnowledgeChunk[],
+  sidecars: ScannedEmbeddingFile[],
   batchSize: number,
-): Promise<void> {
-  for (let i = 0; i < chunks.length; i += batchSize) {
-    const batch = chunks.slice(i, i + batchSize);
-    const vectors = await embedTexts(
-      batch.map((c) => c.content),
-      config.embedding,
+): Promise<number> {
+  let total = 0;
+  for (const sidecar of sidecars) {
+    const indexedAt = new Date().toISOString();
+    const chunks = sidecar.file.chunks.map((chunk) =>
+      embeddingChunkToKnowledgeChunk(sidecar.sourceId, chunk, indexedAt),
     );
-    await upsertChunks(client, config.qdrant.collection, chunks.slice(i, i + batchSize), vectors);
+    const vectors = sidecar.file.chunks.map((chunk) => chunk.vector);
+
+    for (let i = 0; i < chunks.length; i += batchSize) {
+      const batchChunks = chunks.slice(i, i + batchSize);
+      const batchVectors = vectors.slice(i, i + batchSize);
+      await upsertChunks(client, config.qdrant.collection, batchChunks, batchVectors);
+      total += batchChunks.length;
+    }
   }
+  return total;
 }
 
 async function runFullIndex(
   config: KnowledgeConfig,
   client: ReturnType<typeof createQdrantClient>,
-  files: SourceFile[],
+  sidecars: ScannedEmbeddingFile[],
   statePath: string,
   manifestHash: string,
   batchSize: number,
-): Promise<IndexResult> {
+): Promise<IndexEmbeddingsResult> {
   await deleteCollection(client, config.qdrant.collection);
   await ensureCollection(client, config.qdrant.collection, config.embedding.dimensions);
 
   const state = emptyIndexState(config.qdrant, config.embedding, config.knowledgeRoot, manifestHash);
-  const allChunks: KnowledgeChunk[] = [];
-
-  for (const file of files) {
-    const { chunks, fingerprint } = buildFileChunks(file);
-    allChunks.push(...chunks);
-    state.files[file.sourceId] = toFileState(chunks, fingerprint);
+  for (const sidecar of sidecars) {
+    state.files[sidecar.sourceId] = toFileState(sidecar);
   }
 
-  await embedAndUpsert(config, client, allChunks, batchSize);
+  const chunks = await upsertSidecarChunks(config, client, sidecars, batchSize);
   saveIndexState(statePath, state);
 
   return {
     mode: "full",
-    files: files.length,
-    chunks: allChunks.length,
-    added: files.length,
+    files: sidecars.length,
+    chunks,
+    added: sidecars.length,
     updated: 0,
     removed: 0,
     skipped: 0,
@@ -185,26 +214,24 @@ async function runFullIndex(
 async function runIncrementalIndex(
   config: KnowledgeConfig,
   client: ReturnType<typeof createQdrantClient>,
-  files: SourceFile[],
+  sidecars: ScannedEmbeddingFile[],
   prevState: IndexState,
   statePath: string,
   manifestHash: string,
   batchSize: number,
   scoped: boolean,
-): Promise<IndexResult> {
+): Promise<IndexEmbeddingsResult> {
   await ensureCollection(client, config.qdrant.collection, config.embedding.dimensions);
 
-  const built = new Map<string, { chunks: KnowledgeChunk[]; fingerprint: CorpusFingerprint }>();
   const fingerprints = new Map<string, CorpusFingerprint>();
-  for (const file of files) {
-    const result = buildFileChunks(file);
-    built.set(file.sourceId, result);
-    fingerprints.set(file.sourceId, result.fingerprint);
+  const bySourceId = new Map<string, ScannedEmbeddingFile>();
+  for (const sidecar of sidecars) {
+    bySourceId.set(sidecar.sourceId, sidecar);
+    fingerprints.set(sidecar.sourceId, sidecarFingerprint(sidecar));
   }
 
   const diff = diffCorpus(fingerprints, prevState, !scoped);
 
-  // Carry forward the previous state, then apply the diff.
   const state: IndexState = {
     ...prevState,
     collection: config.qdrant.collection,
@@ -218,31 +245,35 @@ async function runIncrementalIndex(
     files: { ...prevState.files },
   };
 
-  // Delete stale chunks for changed and removed files.
   for (const sourceId of diff.changed) {
-    await deleteChunksByIds(client, config.qdrant.collection, prevState.files[sourceId]?.chunk_ids ?? []);
+    await deleteChunksByIds(
+      client,
+      config.qdrant.collection,
+      prevState.files[sourceId]?.chunk_ids ?? [],
+    );
   }
   for (const sourceId of diff.removed) {
-    await deleteChunksByIds(client, config.qdrant.collection, prevState.files[sourceId]?.chunk_ids ?? []);
+    await deleteChunksByIds(
+      client,
+      config.qdrant.collection,
+      prevState.files[sourceId]?.chunk_ids ?? [],
+    );
     delete state.files[sourceId];
   }
 
-  // Embed + upsert added and changed files.
   const toIndex = [...diff.added, ...diff.changed];
-  const newChunks: KnowledgeChunk[] = [];
+  const sidecarsToUpsert = toIndex.map((sourceId) => bySourceId.get(sourceId)!);
   for (const sourceId of toIndex) {
-    const result = built.get(sourceId)!;
-    newChunks.push(...result.chunks);
-    state.files[sourceId] = toFileState(result.chunks, result.fingerprint);
+    state.files[sourceId] = toFileState(bySourceId.get(sourceId)!);
   }
-  await embedAndUpsert(config, client, newChunks, batchSize);
 
+  const chunks = await upsertSidecarChunks(config, client, sidecarsToUpsert, batchSize);
   saveIndexState(statePath, state);
 
   return {
     mode: "incremental",
-    files: files.length,
-    chunks: newChunks.length,
+    files: sidecars.length,
+    chunks,
     added: diff.added.length,
     updated: diff.changed.length,
     removed: diff.removed.length,
@@ -251,12 +282,23 @@ async function runIncrementalIndex(
   };
 }
 
-function toFileState(chunks: KnowledgeChunk[], fingerprint: CorpusFingerprint): IndexedFileState {
-  return {
-    content_hash: fingerprint.contentHash,
-    meta_hash: fingerprint.metaHash,
-    chunk_ids: chunks.map((c) => c.chunk_id),
-    chunk_count: chunks.length,
-    indexed_at: new Date().toISOString(),
-  };
+/** Pure diff helper exported for tests — compares sidecar fingerprints to Qdrant state. */
+export function diffSidecarsAgainstState(
+  sidecars: ScannedEmbeddingFile[],
+  prevState: IndexState | null,
+  detectRemovals: boolean,
+) {
+  const fingerprints = new Map<string, CorpusFingerprint>();
+  for (const sidecar of sidecars) {
+    fingerprints.set(sidecar.sourceId, sidecarFingerprint(sidecar));
+  }
+  return diffCorpus(fingerprints, prevState, detectRemovals);
+}
+
+/** @internal exported for tests */
+export function sidecarToChunks(sidecar: ScannedEmbeddingFile): KnowledgeChunk[] {
+  const indexedAt = new Date().toISOString();
+  return sidecar.file.chunks.map((chunk) =>
+    embeddingChunkToKnowledgeChunk(sidecar.sourceId, chunk, indexedAt),
+  );
 }

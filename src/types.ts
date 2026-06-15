@@ -114,3 +114,33 @@ export type SourceDefinition = {
 export type SourcesManifest = {
   sources: SourceDefinition[];
 };
+
+/** One chunk inside a committed sidecar (`*.embedding.json`). */
+export type EmbeddingFileChunk = {
+  chunk_id: string;
+  chunk_index: number;
+  content_hash: string;
+  title: string;
+  heading_path?: string;
+  skill_name?: string;
+  source_type: SourceType;
+  license?: string;
+  origin?: string;
+  source?: string;
+  source_url?: string;
+  generated_by?: string;
+  generated_at?: string;
+  content: string;
+  vector: number[];
+};
+
+/** Self-contained embedding sidecar written next to each indexed source file. */
+export type EmbeddingFile = {
+  version: number;
+  source_id: string;
+  sha256: string;
+  embedding: { provider: string; model: string; dimensions: number };
+  generated_at: string;
+  chunk_count: number;
+  chunks: EmbeddingFileChunk[];
+};

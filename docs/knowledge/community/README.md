@@ -21,6 +21,6 @@ through the `qa-knowledge` MCP (`search_knowledge`).
 }
 ```
 
-4. Re-index with `npm run knowledge:index` (incremental) so the new files are searchable.
+4. Re-index with `npm run knowledge:sync` (or `knowledge:embedding` then `knowledge:index`) so the new files are searchable.
 
 See [`../README.md`](../README.md) for the provenance convention and indexing workflow.

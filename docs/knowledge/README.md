@@ -53,22 +53,21 @@ and writes the result into each Qdrant chunk's payload (`origin`, `source`, `sou
 indexer's chunk type (skills are typed structurally: `SKILL.md` → `skill`, other skill files →
 `skill_reference`).
 
-## Indexing
+## Embedding and indexing
 
-Run from the **qa-knowledge repo root** (requires Qdrant and an embedding provider — see
+Run from the **qa-knowledge repo root** (embedding needs Ollama/OpenRouter; index needs embedded Qdrant — see
 [README.md](../../README.md)):
 
 | Command | When |
 |---------|------|
-| `npx qa-knowledge-index` | After editing/adding/removing corpus files — **incremental** |
-| `npx qa-knowledge-index --full` | After changing embedding model/dimensions, or full rebuild |
+| `npx qa-knowledge-index embedding` | After editing/adding corpus files — generate `*.embedding.json` sidecars |
+| `npx qa-knowledge-index index` | Upsert sidecars into Qdrant — **incremental** |
+| `npx qa-knowledge-index sync` | Both steps |
+| `npx qa-knowledge-index sync --full` | After changing embedding model/dimensions, or full Qdrant rebuild |
 
 SDK markdown regeneration (`npm run knowledge:convert-sdk`) lives in the private QuantumAudio monorepo when bumping the vendored SDK tgz.
 
-Incremental indexing is driven by **`.qa-index.json`** (committed to git). It records, per file, the
-content hash, the merged provenance hash, and the Qdrant chunk ids — so an index run re-embeds only
-new or changed files, deletes stale chunks for edited files, and purges chunks for deleted files. A
-full re-index is forced automatically when the embedding configuration no longer matches the state.
+Each source file has a committed sidecar (`SKILL.md.embedding.json`) with SHA-256 of the source, chunk payloads, and vectors. Qdrant state is tracked in **`.qa-index.json`** (also committed) — incremental index upserts only new/changed sidecars and deletes stale chunks.
 
-After editing corpus files, run `npm run knowledge:index` and commit the updated `.qa-index.json`
+After editing corpus files, run `npm run knowledge:sync` and commit updated sidecars + `.qa-index.json`
 alongside your changes.

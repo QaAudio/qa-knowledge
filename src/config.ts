@@ -2,6 +2,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { EmbeddingConfig, KnowledgeConfig, QdrantConfig } from "./types.js";
+import { EMBEDDED_QDRANT_REST_URL } from "./qdrant/paths.js";
 
 const DEFAULT_KNOWLEDGE_ROOT_REL = "docs/knowledge";
 const SOURCES_MANIFEST_REL = path.join("config", "knowledge.sources.json");
@@ -62,8 +63,7 @@ export function configFromEnv(repoRoot = defaultRepoRoot()): KnowledgeConfig {
   };
 
   const qdrant: QdrantConfig = {
-    url: resolveEnvPlaceholder(process.env.QDRANT_URL, "http://127.0.0.1:6333"),
-    apiKey: process.env.QDRANT_API_KEY || undefined,
+    url: EMBEDDED_QDRANT_REST_URL,
     collection: process.env.KNOWLEDGE_COLLECTION ?? "qa-core",
   };
 
