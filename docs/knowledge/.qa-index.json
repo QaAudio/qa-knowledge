@@ -8,7 +8,7 @@
   },
   "sources_manifest_hash": "6fee22ea261a28585289c6eaed98b321daf34f86f80be970f78acc01e794c8b6",
   "knowledge_root": "knowledge",
-  "last_index_at": "2026-06-27T21:05:53.187Z",
+  "last_index_at": "2026-06-28T21:47:16.845Z",
   "last_full_index_at": "2026-06-10T22:21:54.263Z",
   "files": {
     "ableton-sdk/api/classes/Application.md": {
@@ -8373,6 +8373,18 @@
       ],
       "chunk_count": 14,
       "indexed_at": "2026-06-26T16:32:02.177Z"
+    },
+    "skills/filesystem-curator/SKILL.md": {
+      "content_hash": "4ec03e61ee92c0f6adae617a30436c532269c8dea7a380656127fb9422669f35",
+      "meta_hash": "2026-06-28T21:47:13.910Z",
+      "chunk_ids": [
+        "1df5841e0d0989f2c66dc39b4b70db67",
+        "fcefc2186e5a275f4fcb596bffd9a294",
+        "e8f573c179a210fffe6063b255f54d02",
+        "2b42702a0308d94ae14a8ff850c7cdcf"
+      ],
+      "chunk_count": 4,
+      "indexed_at": "2026-06-28T21:47:16.845Z"
     }
   }
 }
